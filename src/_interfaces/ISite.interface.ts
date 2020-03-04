@@ -27,6 +27,17 @@ export interface IRouteObject {
 
 export interface ISiteContentItems {
   content: string;
+  areas: IGenericContent[]
+}
+
+export interface IGenericContent {
+  areaName: string;
+  genericArea: IGenericElement[];
+}
+
+export interface IGenericElement {
+  elementName: string;
+  content: string;
 }
 
 export interface ISiteOptions {
@@ -36,12 +47,3 @@ export interface ISiteOptions {
 export interface IRouteResponse {
   id: string;
 }
-
-// export interface IFactoryBuilder {
-//   "LANDING_PAGE": LandingpageFactory();
-//   "STANDARD_PAGE": StandardpageFactory;
-//   "FEATURED_PAGE": FeaturedpageFactory;
-//   "CONTACT_PAGE": ContactpageFactory;
-//   "NEWS_PAGE": NewspageFactory;
-//   "BLOG_PAGE": BlogpageFactory;
-// }

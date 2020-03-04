@@ -1,39 +1,39 @@
 import {
-  StandardpageFactory
+  StandardpageFactory,
 } from './../_factories/standardpage.factory';
 import {
-  NewspageFactory
+  NewspageFactory,
 } from './../_factories/newspage.factory';
 import {
-  LandingpageFactory
+  LandingpageFactory,
 } from './../_factories/landingpage.factory';
 import {
-  FeaturedpageFactory
+  FeaturedpageFactory,
 } from './../_factories/featuredpage.factory';
 import {
-  ContactpageFactory
+  ContactpageFactory,
 } from './../_factories/contactpage.factory';
 import { HomepageFactory } from './../_factories/homepage.factory';
-import { ErrorpageFactory } from './../_factories/errorpage.factory'
+import { ErrorpageFactory } from './../_factories/errorpage.factory';
 import {
-  BlogpageFactory
+  BlogpageFactory,
 } from './../_factories/blogpage.factory';
 
 import {
-  TPageObject
+  TPageObject,
 } from './../_utilities/custom.types';
 import {
   Controller,
   Get,
   Param,
   Res,
-  Redirect
+  Redirect,
 } from '@nestjs/common';
 import {
-  AppService
+  AppService,
 } from '../_services/app.service';
 import {
-  FileService
+  FileService,
 } from '../_services/file.service';
 import {
   ISite,
@@ -44,10 +44,10 @@ import {
   IRouteObject,
 } from '../_interfaces/ISite.interface';
 import {
-  IDatabaseQueryResolution
+  IDatabaseQueryResolution,
 } from '../_interfaces/IDatabaserQueryResolution.interface';
 import {
-  Log
+  Log,
 } from '../_utilities/constants.class';
 
 
@@ -77,26 +77,26 @@ export class AppController {
 
     FileService.queryDb('site').then((response: IDatabaseQueryResolution) => {
       this.globalDataObject = response.payload;
+      // console.log(this.globalDataObject.pages[0].contentItems[0].areas);
     }).catch((error: IDatabaseQueryResolution) => {
       Log(error.payload);
     });
 
   }
 
-    /*
-   * @Param Return home page.
-   * Could this be done better?
-   */
+  /*
+ * @Param Return home page.
+ * Could this be done better?
+ */
 
   @Get('')
   public homeRouteProvider(@Res() responseToSend: any): any {
-    // param.id = 'home';
     this.routeConstructor({ id: 'home' }, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
       return responseToSend.render(factoryResponse.options.template, {
         pageData: {
-          routes: this.getPageProps("GET_ROUTES")
+          routes: this.getPageProps('GET_ROUTES'),
         },
-        message: factoryResponse.contentItems[0].content,
+        message: factoryResponse.contentItems[0].areas,
       });
     }).catch((err: string) => {
       return responseToSend.render('error.hbs', {
@@ -117,34 +117,34 @@ export class AppController {
     return this.routeConstructor(param, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
       responseToSend.render(factoryResponse.options.template, {
         pageData: {
-          routes: this.getPageProps("GET_ROUTES")
+          routes: this.getPageProps('GET_ROUTES'),
         },
-        message: factoryResponse.contentItems[0].content,
+        message: factoryResponse.contentItems[0].areas,
       });
+      console.log(factoryResponse.contentItems[0].areas);
     }).catch((err: string) => {
       responseToSend.render('error.hbs', {
         pageData: [],
-        message: err
+        message: err,
       });
     });
 
   }
-  
 
 
   public getPageProps(command: string): string[] {
 
     const commandSet = {
-      "GET_ROUTES": () => {
-        let routes: IRouteObject[] = [];
+      'GET_ROUTES': () => {
+        const routes: IRouteObject[] = [];
         this.globalDataObject.pages.forEach((page) => {
           if (page.route.routeShown) {
             routes.push(page.route);
           }
-        })
+        });
         return routes;
-      }
-    }
+      },
+    };
 
     return commandSet[command]();
 
@@ -155,7 +155,7 @@ export class AppController {
    * @Param Does the business of actually constructing the page object to be sent back to the client side.
    */
 
-  public routeConstructor(routeIdObject: IRouteResponse, globalDataObject: ISite): Promise < ISitePageObject | string > {
+  public routeConstructor(routeIdObject: IRouteResponse, globalDataObject: ISite): Promise<ISitePageObject | string> {
 
     let routeItem: ISitePageObject;
     let localFactory: TPageObject;
@@ -170,8 +170,8 @@ export class AppController {
           .then((res: ISitePageObject) => {
             resolve(res);
           }).catch(() => {
-            reject('404 Page Not Found.');
-          });
+          reject('404 Page Not Found.');
+        });
       } else {
         reject('404 Page Not Found.');
       }
@@ -197,7 +197,7 @@ export class AppController {
       'NEWS_PAGE': NewspageFactory,
       'BLOG_PAGE': BlogpageFactory,
       'HOME_PAGE': HomepageFactory,
-      'ERROR_PAGE': ErrorpageFactory
+      'ERROR_PAGE': ErrorpageFactory,
     };
 
     return new factories[routeItem.type](routeItem);

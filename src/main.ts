@@ -13,14 +13,27 @@ async function bootstrap() {
     AppModule,
   );
 
+  const loadComponents = (pathName: string) => {
+    const partialsDir = __dirname + `/../views/${pathName}`;
+    const filenames = fs.readdirSync(partialsDir);
+    filenames.forEach(function (filename) {
+      const matches = /^([^.]+).hbs$/.exec(filename);
+      if (!matches) {
+        return;
+      }
+      const name = `${matches[1]}`;
+      const template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
+      hbs.registerPartial(name, template);
+    });
+  };
+
   app.useStaticAssets(join(__dirname, '..', 'public'));
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
-  // hbs.registerPartial('navigation_area', '/views/partials/navigation_area.');
   app.setViewEngine('hbs');
-  // hbs.registerPartials(__dirname + '/views/partials');
 
+  loadComponents('partials/areas');
+  loadComponents('partials/elements');
   loadComponents('partials');
-  // hbs.registerPartial('navigation_area', '/partials/navigation_area');
 
   app.set('view options', { layout: '/partials/index.hbs' });
 
@@ -31,23 +44,7 @@ async function bootstrap() {
 
 bootstrap();
 
-function loadComponents(pathName: string) {
-  const partialsDir = __dirname + `/../views/${pathName}`;
-  const filenames = fs.readdirSync(partialsDir);
 
-  filenames.forEach(function (filename) {
-    var matches = /^([^.]+).hbs$/.exec(filename);
-    if (!matches) {
-      return;
-    }
-    const name = `${pathName}_${matches[1]}`;
-    const template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
-    console.log(name);
-    console.log(template);
-    hbs.registerPartial(name, template);
-  });
-
-}
 
 console.log(`
 

@@ -1,0 +1,5 @@
+generic container
+
+{{#each message}}
+    {{> (lookup . 'elementName') }}
+{{/each}}
