@@ -1,0 +1,11 @@
+<div class="area form-area">
+    {{#each viewData}}
+        <div>
+            {{#each this}}
+                <div>
+                    {{> (lookup . 'elementName') viewData=this}}
+                </div>
+            {{/each}}
+        </div>
+    {{/each}}
+</div>
