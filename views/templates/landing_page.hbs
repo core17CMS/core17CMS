@@ -1,1 +1,3 @@
-{{message}}
+{{#each viewData}}
+    {{> (lookup . 'areaName') viewData=this }}
+{{/each}}

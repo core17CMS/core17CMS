@@ -1,17 +1,13 @@
-generic container
 
 <div>
     viewData.areaName: {{viewData.areaName}}<br/>
 </div>
 
 <div>
-    #each viewData<br/>
     {{#each viewData}}
         <div>
-            #each this<br/>
             {{#each this}}
                 <div>
-                    (lookup . 'elementName') viewData=this <br/>
                     {{> (lookup . 'elementName') viewData=this}}
                 </div>
             {{/each}}
