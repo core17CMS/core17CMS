@@ -10,7 +10,7 @@ export class FileService {
   static queryDb(dbFileString: string): any {
     return new Promise<IDatabaseQueryResolution>((resolve, reject) => {
       try {
-        const file: any = fs.readFileSync(`./src/_db/${dbFileString}.json`);
+        const file: any = fs.readFileSync(`database/${dbFileString}.json`);
         resolve(
           {
             status: STATUS_OK,
@@ -29,7 +29,7 @@ export class FileService {
   static updateDb(dbFileString: string, payload: any): any {
     return new Promise<IDatabaseQueryResolution>((resolve, reject) => {
       const prepareDataForStorage = incomingData => JSON.stringify(incomingData);
-      fs.writeFile(`../_db/${dbFileString}.json`, prepareDataForStorage(payload), (err) => {
+      fs.writeFile(`database/${dbFileString}.json`, prepareDataForStorage(payload), (err) => {
         if (err) {
           reject({
             status: STATUS_FAILED,
