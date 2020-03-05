@@ -96,12 +96,12 @@ export class AppController {
         pageData: {
           routes: this.getPageProps('GET_ROUTES'),
         },
-        message: factoryResponse.contentItems[0].areas,
+        viewData: factoryResponse.contentItems[0].areas,
       });
     }).catch((err: string) => {
       return responseToSend.render('error.hbs', {
         pageData: [],
-        message: err,
+        viewData: err,
       });
     });
 
@@ -119,13 +119,13 @@ export class AppController {
         pageData: {
           routes: this.getPageProps('GET_ROUTES'),
         },
-        message: factoryResponse.contentItems[0].areas,
+        viewData: factoryResponse.contentItems[0].areas,
       });
-      console.log(factoryResponse.contentItems[0].areas);
+      console.log(factoryResponse.contentItems[0].areas[0]);
     }).catch((err: string) => {
       responseToSend.render('error.hbs', {
         pageData: [],
-        message: err,
+        viewData: err,
       });
     });
 

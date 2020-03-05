@@ -37,7 +37,7 @@ export interface IGenericContent {
 
 export interface IGenericElement {
   elementName: string;
-  content: string;
+  genericElement: string;
 }
 
 export interface ISiteOptions {

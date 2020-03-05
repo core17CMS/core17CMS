@@ -27,6 +27,10 @@ async function bootstrap() {
     });
   };
 
+  hbs.registerHelper("setVar", function(varName, varValue, options) {
+    options.data.root[varName] = varValue;
+  });
+
   app.useStaticAssets(join(__dirname, '..', 'public'));
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('hbs');
