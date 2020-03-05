@@ -12,16 +12,17 @@ import { StandardpageFactory } from './_factories/standardpage.factory';
 
 @Module({
   imports: [PageFactory,
-  ContactpageFactory,
-  FeaturedpageFactory,
-  LandingpageFactory,
-  NewspageFactory,
-  StandardpageFactory],
+    ContactpageFactory,
+    FeaturedpageFactory,
+    LandingpageFactory,
+    NewspageFactory,
+    StandardpageFactory],
   controllers: [
     AppController,
-    AdminController
+    AdminController,
   ],
   providers: [AppService,
-  FileService],
+    FileService],
 })
-export class AppModule {}
+export class AppModule {
+}

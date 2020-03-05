@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { STATUS_FAILED, STATUS_OK } from '../_utilities/constants.class';
+import { STATUS_FAILED, STATUS_OK } from '../_utilities/base.constants';
 import { IDatabaseQueryResolution } from '../_interfaces/IDatabaserQueryResolution.interface';
 import * as fs from 'fs';
 

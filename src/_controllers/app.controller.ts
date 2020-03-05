@@ -1,54 +1,11 @@
-import {
-  StandardpageFactory,
-} from './../_factories/standardpage.factory';
-import {
-  NewspageFactory,
-} from './../_factories/newspage.factory';
-import {
-  LandingpageFactory,
-} from './../_factories/landingpage.factory';
-import {
-  FeaturedpageFactory,
-} from './../_factories/featuredpage.factory';
-import {
-  ContactpageFactory,
-} from './../_factories/contactpage.factory';
-import { HomepageFactory } from './../_factories/homepage.factory';
-import { ErrorpageFactory } from './../_factories/errorpage.factory';
-import {
-  BlogpageFactory,
-} from './../_factories/blogpage.factory';
 
-import {
-  TPageObject,
-} from './../_utilities/custom.types';
-import {
-  Controller,
-  Get,
-  Param,
-  Res,
-  Redirect,
-} from '@nestjs/common';
-import {
-  AppService,
-} from '../_services/app.service';
-import {
-  FileService,
-} from '../_services/file.service';
-import {
-  ISite,
-  ISiteContentItems,
-  ISiteOptions,
-  ISitePageObject,
-  IRouteResponse,
-  IRouteObject,
-} from '../_interfaces/ISite.interface';
-import {
-  IDatabaseQueryResolution,
-} from '../_interfaces/IDatabaserQueryResolution.interface';
-import {
-  Log,
-} from '../_utilities/constants.class';
+import { TPageObject } from './../_utilities/custom.types';
+import { Controller, Get, Param, Res } from '@nestjs/common';
+import { FileService } from '../_services/file.service';
+import { ISite, ISitePageObject, IRouteResponse, IRouteObject } from '../_interfaces/ISite.interface';
+import { IDatabaseQueryResolution } from '../_interfaces/IDatabaserQueryResolution.interface';
+import { Log } from '../_utilities/base.constants';
+import { PAGE_FACTORIES } from '../_utilities/factories.constants';
 
 
 @Controller()
@@ -86,7 +43,6 @@ export class AppController {
 
   /*
  * @Param Return home page.
- * Could this be done better?
  */
 
   @Get('')
@@ -121,7 +77,6 @@ export class AppController {
         },
         viewData: factoryResponse.contentItems[0].areas,
       });
-      console.log(factoryResponse.contentItems[0].areas[0]);
     }).catch((err: string) => {
       responseToSend.render('error.hbs', {
         pageData: [],
@@ -189,18 +144,7 @@ export class AppController {
       routeItem = this.globalDataObject.errorPage;
     }
 
-    const factories = {
-      'LANDING_PAGE': LandingpageFactory,
-      'STANDARD_PAGE': StandardpageFactory,
-      'FEATURED_PAGE': FeaturedpageFactory,
-      'CONTACT_PAGE': ContactpageFactory,
-      'NEWS_PAGE': NewspageFactory,
-      'BLOG_PAGE': BlogpageFactory,
-      'HOME_PAGE': HomepageFactory,
-      'ERROR_PAGE': ErrorpageFactory,
-    };
-
-    return new factories[routeItem.type](routeItem);
+    return new PAGE_FACTORIES[routeItem.type](routeItem);
 
   }
 

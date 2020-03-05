@@ -9,7 +9,7 @@ import { FeaturedpageFactory } from '../_factories/featuredpage.factory';
 import { ContactpageFactory } from '../_factories/contactpage.factory';
 import { NewspageFactory } from '../_factories/newspage.factory';
 import { BlogpageFactory } from '../_factories/blogpage.factory';
-import { Log } from './../_utilities/constants.class';
+import { Log } from '../_utilities/base.constants';
 
 // @Todo Need to actually apply interfaces to everything in here.
 
