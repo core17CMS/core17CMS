@@ -2,4 +2,38 @@ html, body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     background-color: floralwhite;
+    text-align: center;
+}
+
+main, header, footer {
+    width: 100%;
+    max-width: 1170px;
+    display: inline-block;
+    text-align: left;
+    border: 1px solid beige;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+}
+
+.area {
+    width: calc(100% - 20px);
+    display: inline-block;
+    text-align: left;
+    border: 1px solid beige;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: blanchedalmond;
+}
+
+.element {
+    display: inline-block;
+    text-align: left;
+    border: 1px solid beige;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: bisque;
 }
