@@ -7,8 +7,17 @@ import { BlogPageFactory } from '../_factories/blogpage.factory';
 import { HomePageFactory } from '../_factories/homepage.factory';
 import { ErrorPageFactory } from '../_factories/errorpage.factory';
 
-// BlogareaFactory
-// ButtonareaFactory
+// BlogAreaFactory
+// ButtonAreaFactory
+// FeatureAreaFactory
+// FooterAreaFactory
+// FormAreaFactory
+// GenericAreaFactory
+// HeaderAreaFactory
+// JumbotronAreaFactory
+// NewsAreaFactory
+// TeaserAreaFactory
+// TextAreaFactory
 
 
 export const PAGE_FACTORIES = {
