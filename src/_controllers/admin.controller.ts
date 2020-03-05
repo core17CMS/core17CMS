@@ -3,12 +3,12 @@ import { AppService } from '../_services/app.service';
 import { FileService } from '../_services/file.service';
 import { ISite, ISiteContentItems,ISiteOptions, ISitePageObject, IRouteResponse } from '../_interfaces/ISite.interface';
 import { IDatabaseQueryResolution } from '../_interfaces/IDatabaserQueryResolution.interface';
-import { LandingpageFactory } from '../_factories/landingpage.factory';
-import { StandardpageFactory } from '../_factories/standardpage.factory';
-import { FeaturedpageFactory } from '../_factories/featuredpage.factory';
-import { ContactpageFactory } from '../_factories/contactpage.factory';
-import { NewspageFactory } from '../_factories/newspage.factory';
-import { BlogpageFactory } from '../_factories/blogpage.factory';
+import { LandingPageFactory } from '../_factories/landingpage.factory';
+import { StandardPageFactory } from '../_factories/standardpage.factory';
+import { FeaturedPageFactory } from '../_factories/featuredpage.factory';
+import { ContactPageFactory } from '../_factories/contactpage.factory';
+import { NewsPageFactory } from '../_factories/newspage.factory';
+import { BlogPageFactory } from '../_factories/blogpage.factory';
 import { Log } from '../_utilities/base.constants';
 
 // @Todo Need to actually apply interfaces to everything in here.

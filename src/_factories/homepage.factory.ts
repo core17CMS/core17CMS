@@ -1,5 +1,7 @@
-export class HomepageFactory {
-    constructor(private contentItems: any) {
+import { ISitePageObject } from '../_interfaces/ISite.interface';
+
+export class HomePageFactory {
+    constructor(private contentItems: ISitePageObject) {
       console.log('homepage constructor called!');
     }
   
@@ -19,4 +21,3 @@ export class HomepageFactory {
     }
   
   }
-  

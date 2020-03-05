@@ -1,6 +1,6 @@
-export class NewspageFactory {
+export class NewsPageFactory {
   constructor(private contentItems: any) {
-    console.log('NewspageFactory constructor called!');
+    console.log('NewsPageFactory constructor called!');
   }
 
   public init() {

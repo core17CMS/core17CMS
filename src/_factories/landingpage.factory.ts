@@ -1,6 +1,6 @@
-export class LandingpageFactory {
+export class LandingPageFactory {
   constructor(private contentItems: any) {
-    console.log('LandingpageFactory constructor called!');
+    console.log('LandingPageFactory constructor called!');
   }
 
   public init() {

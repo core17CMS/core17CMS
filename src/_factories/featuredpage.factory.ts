@@ -1,6 +1,6 @@
-export class FeaturedpageFactory {
+export class FeaturedPageFactory {
   constructor(private contentItems: any) {
-    console.log('FeaturedpageFactory constructor called!');
+    console.log('FeaturedPageFactory constructor called!');
   }
 
   public init() {

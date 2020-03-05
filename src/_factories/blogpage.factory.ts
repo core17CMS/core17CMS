@@ -1,6 +1,6 @@
-export class BlogpageFactory {
+export class BlogPageFactory {
   constructor(private contentItems: any) {
-    console.log('BlogpageFactory constructor called!');
+    console.log('BlogPageFactory constructor called!');
   }
 
   public init() {

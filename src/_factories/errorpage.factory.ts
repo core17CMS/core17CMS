@@ -1,6 +1,6 @@
-export class ErrorpageFactory {
+export class ErrorPageFactory {
     constructor(private contentItems: any) {
-      console.log('ErrorpageFactory constructor called!');
+      console.log('ErrorPageFactory constructor called!');
     }
   
     public init() {
@@ -19,4 +19,3 @@ export class ErrorpageFactory {
     }
   
   }
-  

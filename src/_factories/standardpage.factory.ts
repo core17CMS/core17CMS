@@ -1,6 +1,6 @@
-export class StandardpageFactory {
+export class StandardPageFactory {
   constructor(private contentItems: any) {
-    console.log('StandardpageFactory constructor called!');
+    console.log('StandardPageFactory constructor called!');
   }
 
   public init() {

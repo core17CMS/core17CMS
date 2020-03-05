@@ -1,36 +1,36 @@
-import { BlogpageFactory } from './blogpage.factory';
-import { ContactpageFactory } from './contactpage.factory';
-import { FeaturedpageFactory } from './featuredpage.factory';
-import { LandingpageFactory } from './landingpage.factory';
-import { NewspageFactory } from './newspage.factory';
-import { StandardpageFactory } from './standardpage.factory';
+import { BlogPageFactory } from './blogpage.factory';
+import { ContactPageFactory } from './contactpage.factory';
+import { FeaturedPageFactory } from './featuredpage.factory';
+import { LandingPageFactory } from './landingpage.factory';
+import { NewsPageFactory } from './newspage.factory';
+import { StandardPageFactory } from './standardpage.factory';
 
 import { ISitePageObject } from '../_interfaces/ISite.interface';
 
 export class PageFactory {
 
-  public static BlogFactory(routeItem: ISitePageObject): BlogpageFactory {
-    return new BlogpageFactory(routeItem);
+  public static BlogFactory(routeItem: ISitePageObject): BlogPageFactory {
+    return new BlogPageFactory(routeItem);
   }
 
-  public static FeaturedFactory(routeItem: ISitePageObject): FeaturedpageFactory {
-    return new FeaturedpageFactory(routeItem);
+  public static FeaturedFactory(routeItem: ISitePageObject): FeaturedPageFactory {
+    return new FeaturedPageFactory(routeItem);
   }
 
-  public static LandingFactory(routeItem: ISitePageObject): LandingpageFactory {
-    return new LandingpageFactory(routeItem);
+  public static LandingFactory(routeItem: ISitePageObject): LandingPageFactory {
+    return new LandingPageFactory(routeItem);
   }
 
-  public static NewsFactory(routeItem: ISitePageObject): NewspageFactory {
-    return new NewspageFactory(routeItem);
+  public static NewsFactory(routeItem: ISitePageObject): NewsPageFactory {
+    return new NewsPageFactory(routeItem);
   }
 
-  public static StandardFactory(routeItem: ISitePageObject): StandardpageFactory {
-    return new StandardpageFactory(routeItem);
+  public static StandardFactory(routeItem: ISitePageObject): StandardPageFactory {
+    return new StandardPageFactory(routeItem);
   }
 
-  public static ContactFactory(routeItem: ISitePageObject): ContactpageFactory {
-    return new ContactpageFactory(routeItem);
+  public static ContactFactory(routeItem: ISitePageObject): ContactPageFactory {
+    return new ContactPageFactory(routeItem);
   }
 
 }

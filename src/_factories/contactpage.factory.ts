@@ -1,6 +1,6 @@
-export class ContactpageFactory {
+export class ContactPageFactory {
   constructor(private contentItems: any) {
-    console.log('ContactpageFactory constructor called!');
+    console.log('ContactPageFactory constructor called!');
   }
 
   public init() {

@@ -16,24 +16,26 @@
         "areas": [
           {
             "areaName": "generic-area",
+            "type": "GENERIC_AREA",
             "genericArea": [
               {
                 "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
                   "content": "Generic Element String1"
                 }
               },
               {
                 "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
-
                   "content": "Generic Element String2"
                 }
               },
               {
                 "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
-
                   "content": "Generic Element String3"
                 }
               }
@@ -41,23 +43,26 @@
           },
           {
             "areaName": "generic-area",
+            "type": "GENERIC_AREA",
             "genericArea": [
               {
                 "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
-
                   "content": "Generic Element String4"
                 }
               },
-              {"elementName": "generic-element",
+              {
+                "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
-
                   "content": "Generic Element String5"
                 }
               },
-              {"elementName": "generic-element",
+              {
+                "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
-
                   "content": "Generic Element String6"
                 }
               }
@@ -65,22 +70,26 @@
           },
           {
             "areaName": "generic-area",
+            "type": "GENERIC_AREA",
             "genericArea": [
-              {"elementName": "generic-element",
+              {
+                "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
-
                   "content": "Generic Element String7"
                 }
               },
-              {"elementName": "generic-element",
+              {
+                "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
-
                   "content": "Generic Element String8"
                 }
               },
-              {"elementName": "generic-element",
+              {
+                "elementName": "generic-element",
+                "type": "GENERIC_ELEMENT",
                 "genericElement": {
-
                   "content": "Generic Element String9"
                 }
               }
@@ -108,24 +117,26 @@
           "areas": [
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String2"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String3"
                   }
                 }
@@ -133,23 +144,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String4"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String5"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String6"
                   }
                 }
@@ -157,22 +171,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String7"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String8"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String9"
                   }
                 }
@@ -199,24 +217,26 @@
           "areas": [
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String2"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String3"
                   }
                 }
@@ -224,23 +244,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String4"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String5"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String6"
                   }
                 }
@@ -248,22 +271,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String7"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String8"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String9"
                   }
                 }
@@ -290,24 +317,26 @@
           "areas": [
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String2"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String3"
                   }
                 }
@@ -315,23 +344,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String4"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String5"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String6"
                   }
                 }
@@ -339,22 +371,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String7"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String8"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String9"
                   }
                 }
@@ -381,24 +417,26 @@
           "areas": [
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String2"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String3"
                   }
                 }
@@ -406,23 +444,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String4"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String5"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String6"
                   }
                 }
@@ -430,22 +471,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String7"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String8"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String9"
                   }
                 }
@@ -472,24 +517,26 @@
           "areas": [
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String2"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String3"
                   }
                 }
@@ -497,23 +544,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String4"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String5"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String6"
                   }
                 }
@@ -521,22 +571,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String7"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String8"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String9"
                   }
                 }
@@ -563,24 +617,26 @@
           "areas": [
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String2"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String3"
                   }
                 }
@@ -588,23 +644,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String4"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String5"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String6"
                   }
                 }
@@ -612,22 +671,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String7"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String8"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String9"
                   }
                 }
@@ -654,24 +717,26 @@
           "areas": [
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String2"
                   }
                 },
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String3"
                   }
                 }
@@ -679,23 +744,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
                 {
                   "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String4"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String5"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String6"
                   }
                 }
@@ -703,22 +771,26 @@
             },
             {
               "areaName": "generic-area",
+              "type": "GENERIC_AREA",
               "genericArea": [
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String7"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String8"
                   }
                 },
-                {"elementName": "generic-element",
+                {
+                  "elementName": "generic-element",
+                  "type": "GENERIC_ELEMENT",
                   "genericElement": {
-
                     "content": "Generic Element String9"
                   }
                 }
