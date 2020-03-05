@@ -10,14 +10,16 @@
 
 <div>
 
-    {{> navigation-area}}
+    {{> header-area viewData=pageData}}
 
-
-        {{#each pageData.routes}}
-            <a href="/{{this.routeActual}}" style="display: inline-block"> {{this.routeAlias}} </a>
-        {{/each}}
 </div>
-{{{body}}}
+<div>
+    {{{body}}}
+</div>
+
+<div>
+    {{> footer-area viewData=pageData}}
+</div>
 
 </body>
 
