@@ -202,7 +202,7 @@
       "elementName": "blog-element",
       "type": "BLOG_ELEMENT",
       "options": {},
-      "newsElement": {
+      "blogElement": {
         "title": "",
         "text": "",
         "date": ""
