@@ -1,4 +1,4 @@
-import { ISitePageObject } from '../_interfaces/ISite.interface';
+import { ISitePageObject } from '../../_interfaces/ISite.interface';
 
 export class HomePageFactory {
     constructor(private pageItems: ISitePageObject) {

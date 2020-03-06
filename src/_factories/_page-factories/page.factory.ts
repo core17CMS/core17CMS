@@ -5,7 +5,7 @@ import { LandingPageFactory } from './landingpage.factory';
 import { NewsPageFactory } from './newspage.factory';
 import { StandardPageFactory } from './standardpage.factory';
 
-import { ISitePageObject } from '../_interfaces/ISite.interface';
+import { ISitePageObject } from '../../_interfaces/ISite.interface';
 
 export class PageFactory {
 

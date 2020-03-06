@@ -1,9 +1,9 @@
-import { LandingPageFactory } from '../_factories/landingpage.factory';
-import { StandardPageFactory } from '../_factories/standardpage.factory';
-import { FeaturedPageFactory } from '../_factories/featuredpage.factory';
-import { ContactPageFactory } from '../_factories/contactpage.factory';
-import { NewsPageFactory } from '../_factories/newspage.factory';
-import { BlogPageFactory } from '../_factories/blogpage.factory';
+import { LandingPageFactory } from '../_factories/_page-factories/landingpage.factory';
+import { StandardPageFactory } from '../_factories/_page-factories/standardpage.factory';
+import { FeaturedPageFactory } from '../_factories/_page-factories/featuredpage.factory';
+import { ContactPageFactory } from '../_factories/_page-factories/contactpage.factory';
+import { NewsPageFactory } from '../_factories/_page-factories/newspage.factory';
+import { BlogPageFactory } from '../_factories/_page-factories/blogpage.factory';
 
 
 export interface ISite {
