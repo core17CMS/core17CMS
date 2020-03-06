@@ -27,7 +27,7 @@ export interface IRouteObject {
 
 export interface ISiteContentItems {
   content: string;
-  areas: IGenericContent[]
+  areas: Array<IBlogArea | IButtonArea | IFeatureArea | IFooterArea | IGenericArea | IJumbotronArea | ILinklistArea | INewsArea | IFormArea | IHeaderArea | ITextArea>[]
 }
 
 export interface ISiteOptions {
@@ -78,7 +78,7 @@ export interface IGenericArea extends IAreaBase {
   subTitle: string;
   text: string;
   allowedTypes: string[];
-  genericArea: Array<any>[];
+  genericArea: Array<any | IGenericElement>[];
 }
 
 export interface IJumbotronArea extends IAreaBase {
@@ -120,6 +120,7 @@ export interface ITextArea extends IAreaBase {
 }
 
 
+
 // ELEMENT INTERFACES //
 
 interface IElementBase {
@@ -128,23 +129,22 @@ interface IElementBase {
   options: any;
 }
 
+
 export interface IGenericElement extends IElementBase {
   genericElement: IGenericElementFunctionality;
 }
-
 export interface IGenericElementFunctionality {
   content: string;
 }
 
+
 export interface ILinklistElement extends IElementBase {
   linklistElement: ILinklistElementFunctionality;
 }
-
 export interface ILinklistElementFunctionality {
   linklistTitle: string;
   linkList: ILinklistElementLinkListActual[];
 }
-
 export interface ILinklistElementLinkListActual {
   linkText: string;
   linkUrl: string;
@@ -154,16 +154,15 @@ export interface ILinklistElementLinkListActual {
 export interface IButtonElement extends IElementBase {
   buttonElement: IButtonElementFunctionality;
 }
-
 export interface IButtonElementFunctionality {
   buttonText: string;
   buttonUrl: string;
 }
 
+
 export interface IJumbotronElement extends IElementBase {
   jumbotronElement: IJumbotronElementFunctionality;
 }
-
 export interface IJumbotronElementFunctionality {
   image: any;
   video: any;
@@ -173,10 +172,10 @@ export interface IJumbotronElementFunctionality {
   buttonUrl: string;
 }
 
+
 export interface IFeatureElement extends IElementBase {
   featureElement: IFeatureElementFunctionality;
 }
-
 export interface IFeatureElementFunctionality {
   image: any;
   title: string;
@@ -185,6 +184,7 @@ export interface IFeatureElementFunctionality {
   buttonUrl: string;
 }
 
+
 export interface IImageElement extends IElementBase {
   imageElement: IImageElementFunctionality;
 }
@@ -192,12 +192,14 @@ export interface IImageElementFunctionality {
   image: any;
 }
 
+
 export interface ITextElement extends IElementBase {
   textElement: ITextElementFunctionality;
 }
 export interface ITextElementFunctionality {
   text: string;
 }
+
 
 export interface IBlogElement extends IElementBase {
   blogElement: IBlogElementFunctionality;
@@ -208,6 +210,7 @@ export interface IBlogElementFunctionality {
   date: string;
 }
 
+
 export interface INewsElement extends IElementBase {
   newsElement: INewsElementFunctionality;
 }
@@ -216,6 +219,7 @@ export interface INewsElementFunctionality {
   text: string;
   date: string;
 }
+
 
 export interface IFormElement extends IElementBase {
   formElement: IFormElementFunctionality;
