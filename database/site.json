@@ -1,9 +1,94 @@
 {
+
+  "areaTypes": [
+
+    {
+      "areaName": "generic-area",
+      "type": "GENERIC_AREA",
+      "options": {},
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "allowedTypes": ["ALL"],
+      "genericArea": []
+    },
+
+    {
+      "areaName": "blog-area",
+      "type": "BLOG_AREA",
+      "options": {},
+      "allowedTypes": ["FEATURE_ELEMENT", "BLOG_ELEMENT"],
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "blogArea": []
+    },
+
+    {
+      "areaName": "news-area",
+      "type": "NEWS_AREA",
+      "options": {},
+      "allowedTypes": ["FEATURE_ELEMENT", "NEWS_ELEMENT"],
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "newsArea": []
+    },
+
+    {
+      "areaName": "button-area",
+      "type": "BUTTON_AREA",
+      "options": {},
+      "allowedTypes": ["BUTTON_ELEMENT"],
+      "buttonArea": []
+    },
+
+    {
+      "areaName": "feature-area",
+      "type": "FEATURE_AREA",
+      "options": {},
+      "allowedTypes": ["FEATURE_ELEMENT"],
+      "featureArea": []
+    },
+
+    {
+      "areaName": "footer-area",
+      "type": "FOOTER_AREA",
+      "options": {},
+      "allowedTypes": ["IMAGE_ELEMENT", "TEXT_ELEMENT", "LINKLIST_ELEMENT"],
+      "featureArea": []
+    },
+
+    {
+      "areaName": "form-area",
+      "type": "FORM_AREA",
+      "options": {},
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "allowedTypes": ["TEXT_ELEMENT", "BUTTON_ELEMENT", "FORM_ELEMENT"],
+      "formArea": []
+    },
+
+    {
+      "areaName": "form-area",
+      "type": "FORM_AREA",
+      "options": {},
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "allowedTypes": ["TEXT_ELEMENT", "BUTTON_ELEMENT", "FORM_ELEMENT"],
+      "formArea": []
+    }
+
+  ],
+
   "elementTypes": [
 
     {
       "elementName": "generic-element",
       "type": "GENERIC_ELEMENT",
+      "options": {},
       "genericElement": {
         "content": "Generic Element String1"
       }
@@ -12,6 +97,7 @@
     {
       "elementName": "linklist-element",
       "type": "LINKLIST_ELEMENT",
+      "options": {},
       "linkListElement": {
         "listTitle": "",
         "linkList": [
@@ -26,6 +112,7 @@
     {
       "elementName": "button-element",
       "type": "BUTTON_ELEMENT",
+      "options": {},
       "buttonElement": {
         "buttonText": "",
         "buttonUrl": ""
@@ -35,6 +122,7 @@
     {
       "elementName": "jumbotron-element",
       "type": "JUMBOTRON_ELEMENT",
+      "options": {},
       "jumbotronElement": {
         "image": "",
         "video": "",
@@ -48,6 +136,7 @@
     {
       "elementName": "feature-element",
       "type": "FEATURE_ELEMENT",
+      "options": {},
       "featureElement": {
         "image": "",
         "title": "",
@@ -60,6 +149,7 @@
     {
       "elementName": "image-element",
       "type": "IMAGE_ELEMENT",
+      "options": {},
       "imageElement": {
         "image": ""
       }
@@ -68,6 +158,7 @@
     {
       "elementName": "text-element",
       "type": "TEXT_ELEMENT",
+      "options": {},
       "textElement": {
         "text": ""
       }
@@ -76,6 +167,7 @@
     {
       "elementName": "news-element",
       "type": "NEWS_ELEMENT",
+      "options": {},
       "newsElement": {
         "title": "",
         "text": "",
@@ -86,6 +178,7 @@
     {
       "elementName": "blog-element",
       "type": "BLOG_ELEMENT",
+      "options": {},
       "newsElement": {
         "title": "",
         "text": "",
@@ -96,6 +189,7 @@
     {
       "elementName": "form-element",
       "type": "FORM_ELEMENT",
+      "options": {},
       "formElement": {
         "title": "",
         "text": "",
@@ -105,6 +199,8 @@
     }
 
   ],
+
+
   "errorPage": {
     "route": {
       "routeAlias": "Error Page",
