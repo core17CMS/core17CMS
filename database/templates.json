@@ -1,0 +1,225 @@
+{
+  "areaTypes": [
+
+    {
+      "areaName": "blog-area",
+      "type": "BLOG_AREA",
+      "options": {},
+
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "allowedTypes": ["FEATURE_ELEMENT", "BLOG_ELEMENT"],
+      "blogArea": []
+    },
+
+    {
+      "areaName": "button-area",
+      "type": "BUTTON_AREA",
+      "options": {},
+      "allowedTypes": ["BUTTON_ELEMENT"],
+      "buttonArea": []
+    },
+
+    {
+      "areaName": "feature-area",
+      "type": "FEATURE_AREA",
+      "options": {},
+      "allowedTypes": ["FEATURE_ELEMENT"],
+      "featureArea": []
+    },
+
+    {
+      "areaName": "footer-area",
+      "type": "FOOTER_AREA",
+      "options": {},
+      "allowedTypes": ["IMAGE_ELEMENT", "TEXT_ELEMENT", "LINKLIST_ELEMENT"],
+      "featureArea": []
+    },
+
+    {
+      "areaName": "generic-area",
+      "type": "GENERIC_AREA",
+      "options": {},
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "allowedTypes": ["ALL"],
+      "genericArea": []
+    },
+
+
+
+    {
+      "areaName": "jumbotron-area",
+      "type": "JUMBOTRON_AREA",
+      "options": {},
+      "allowedTypes": ["JUMBOTRON_ELEMENT", "IMAGE_ELEMENT", "TEXT_ELEMENT", "BUTTON_ELEMENT"],
+      "jumbotronArea": []
+    },
+
+    {
+      "areaName": "linklist-area",
+      "type": "LINKLIST_AREA",
+      "options": {},
+      "title": "",
+      "subTitle": "",
+      "allowedTypes": ["LINKLIST_ELEMENT", "BUTTON_ELEMENT"],
+      "linklistArea": []
+    },
+
+    {
+      "areaName": "news-area",
+      "type": "NEWS_AREA",
+      "options": {},
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "allowedTypes": ["FEATURE_ELEMENT", "NEWS_ELEMENT"],
+      "newsArea": []
+    },
+
+    {
+      "areaName": "form-area",
+      "type": "FORM_AREA",
+      "options": {},
+      "title": "",
+      "subTitle": "",
+      "text": "",
+      "allowedTypes": ["TEXT_ELEMENT", "BUTTON_ELEMENT", "FORM_ELEMENT"],
+      "formArea": []
+    },
+    {
+      "areaName": "header-area",
+      "type": "HEADER_AREA",
+      "options": {},
+      "allowedTypes": ["IMAGE_ELEMENT", "TEXT_ELEMENT", "LINKLIST_ELEMENT"],
+      "headerArea": []
+    },
+    {
+      "areaName": "text-area",
+      "type": "TEXT_AREA",
+      "options": {},
+      "allowedTypes": ["TEXT_ELEMENT", "LINKLIST_ELEMENT", "BUTTON_ELEMENT"],
+      "textArea": []
+    }
+
+  ],
+
+  "elementTypes": [
+
+    {
+      "elementName": "generic-element",
+      "type": "GENERIC_ELEMENT",
+      "options": {},
+      "genericElement": {
+        "content": "Generic Element String1"
+      }
+    },
+
+    {
+      "elementName": "linklist-element",
+      "type": "LINKLIST_ELEMENT",
+      "options": {},
+      "linkListElement": {
+        "listTitle": "",
+        "linkList": [
+          {
+            "linkText": "",
+            "linkUrl": ""
+          }
+        ]
+      }
+    },
+
+    {
+      "elementName": "button-element",
+      "type": "BUTTON_ELEMENT",
+      "options": {},
+      "buttonElement": {
+        "buttonText": "",
+        "buttonUrl": ""
+      }
+    },
+
+    {
+      "elementName": "jumbotron-element",
+      "type": "JUMBOTRON_ELEMENT",
+      "options": {},
+      "jumbotronElement": {
+        "image": "",
+        "video": "",
+        "title": "",
+        "subtitle": "",
+        "buttonText": "",
+        "buttonUrl": ""
+      }
+    },
+
+    {
+      "elementName": "feature-element",
+      "type": "FEATURE_ELEMENT",
+      "options": {},
+      "featureElement": {
+        "image": "",
+        "title": "",
+        "text": "",
+        "buttonText": "",
+        "buttonUrl": ""
+      }
+    },
+
+    {
+      "elementName": "image-element",
+      "type": "IMAGE_ELEMENT",
+      "options": {},
+      "imageElement": {
+        "image": ""
+      }
+    },
+
+    {
+      "elementName": "text-element",
+      "type": "TEXT_ELEMENT",
+      "options": {},
+      "textElement": {
+        "text": ""
+      }
+    },
+
+    {
+      "elementName": "news-element",
+      "type": "NEWS_ELEMENT",
+      "options": {},
+      "newsElement": {
+        "title": "",
+        "text": "",
+        "date": ""
+      }
+    },
+
+    {
+      "elementName": "blog-element",
+      "type": "BLOG_ELEMENT",
+      "options": {},
+      "newsElement": {
+        "title": "",
+        "text": "",
+        "date": ""
+      }
+    },
+
+    {
+      "elementName": "form-element",
+      "type": "FORM_ELEMENT",
+      "options": {},
+      "formElement": {
+        "title": "",
+        "text": "",
+        "form": [],
+        "submitButtonText": ""
+      }
+    }
+
+  ]
+}
