@@ -5,7 +5,7 @@ import { TPageObject, TAreaObject, TElementObject } from './../_utilities/custom
 
 export class PageFactory {
 
-  constructor(public pageObject: ISitePageObject) {
+  constructor(public factoryQueryObject: ISitePageObject) {
 
   }
 
@@ -23,7 +23,7 @@ export class PageFactory {
   }
 
   public pageFactoryReturner(): TPageObject {
-    return new PAGE_FACTORIES[this.pageObject.type](this.pageObject);
+    return new PAGE_FACTORIES[this.factoryQueryObject.type](this.factoryQueryObject);
   }
 
   // public areaFactoryReturner(): TAreaObject {

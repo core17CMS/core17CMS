@@ -1,4 +1,110 @@
 {
+  "elementTypes": [
+
+    {
+      "elementName": "generic-element",
+      "type": "GENERIC_ELEMENT",
+      "genericElement": {
+        "content": "Generic Element String1"
+      }
+    },
+
+    {
+      "elementName": "linklist-element",
+      "type": "LINKLIST_ELEMENT",
+      "linkListElement": {
+        "listTitle": "",
+        "linkList": [
+          {
+            "linkText": "",
+            "linkUrl": ""
+          }
+        ]
+      }
+    },
+
+    {
+      "elementName": "button-element",
+      "type": "BUTTON_ELEMENT",
+      "buttonElement": {
+        "buttonText": "",
+        "buttonUrl": ""
+      }
+    },
+
+    {
+      "elementName": "jumbotron-element",
+      "type": "JUMBOTRON_ELEMENT",
+      "jumbotronElement": {
+        "image": "",
+        "video": "",
+        "title": "",
+        "subtitle": "",
+        "buttonText": "",
+        "buttonUrl": ""
+      }
+    },
+
+    {
+      "elementName": "feature-element",
+      "type": "FEATURE_ELEMENT",
+      "featureElement": {
+        "image": "",
+        "title": "",
+        "text": "",
+        "buttonText": "",
+        "buttonUrl": ""
+      }
+    },
+
+    {
+      "elementName": "image-element",
+      "type": "IMAGE_ELEMENT",
+      "imageElement": {
+        "image": ""
+      }
+    },
+
+    {
+      "elementName": "text-element",
+      "type": "TEXT_ELEMENT",
+      "textElement": {
+        "text": ""
+      }
+    },
+
+    {
+      "elementName": "news-element",
+      "type": "NEWS_ELEMENT",
+      "newsElement": {
+        "title": "",
+        "text": "",
+        "date": ""
+      }
+    },
+
+    {
+      "elementName": "blog-element",
+      "type": "BLOG_ELEMENT",
+      "newsElement": {
+        "title": "",
+        "text": "",
+        "date": ""
+      }
+    },
+
+    {
+      "elementName": "form-element",
+      "type": "FORM_ELEMENT",
+      "formElement": {
+        "title": "",
+        "text": "",
+        "form": [],
+        "submitButtonText": ""
+      }
+    }
+
+  ],
   "errorPage": {
     "route": {
       "routeAlias": "Error Page",
