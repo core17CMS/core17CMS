@@ -39,7 +39,6 @@ export class MainController {
 
     FileService.queryDb('site').then((response: IDatabaseQueryResolution) => {
       this.globalDataObject = response.payload;
-      // console.log(this.globalDataObject.pages[0].contentItems[0].areas);
     }).catch((error: IDatabaseQueryResolution) => {
       Log(error.payload);
     });
