@@ -12,8 +12,6 @@ export class HomePageFactory {
       return new Promise((resolve, reject) => {
 
         console.log(this.pageItems.contentItems);
-
-
   
         if (allGood) {
           resolve(this.pageItems);

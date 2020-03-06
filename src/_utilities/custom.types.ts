@@ -6,3 +6,6 @@ import { NewsPageFactory } from '../_factories/_page-factories/newspage.factory'
 import { BlogPageFactory } from '../_factories/_page-factories/blogpage.factory';
 
 export type TPageObject = LandingPageFactory | StandardPageFactory | FeaturedPageFactory | ContactPageFactory | NewsPageFactory | BlogPageFactory;
+export type TAreaObject = LandingPageFactory | StandardPageFactory | FeaturedPageFactory | ContactPageFactory | NewsPageFactory | BlogPageFactory;
+export type TElementObject = LandingPageFactory | StandardPageFactory | FeaturedPageFactory | ContactPageFactory | NewsPageFactory | BlogPageFactory;
+

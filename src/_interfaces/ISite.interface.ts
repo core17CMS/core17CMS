@@ -47,3 +47,10 @@ export interface ISiteOptions {
 export interface IRouteResponse {
   id: string;
 }
+
+
+
+export interface IDatabaseQueryResolution {
+  status: string;
+  payload: any;
+}

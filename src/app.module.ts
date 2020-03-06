@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './_controllers/app.controller';
+import { MainController } from './_controllers/main.controller';
 import { AdminController } from './_controllers/admin.controller';
 import { AppService } from './_services/app.service';
 import { FileService } from './_services/file.service';
-import { PageFactory } from './_factories/_page-factories/page.factory';
+import { PageFactory } from './_factories/page.factory';
 import { ContactPageFactory } from './_factories/_page-factories/contactpage.factory';
 import { FeaturedPageFactory } from './_factories/_page-factories/featuredpage.factory';
 import { LandingPageFactory } from './_factories/_page-factories/landingpage.factory';
@@ -18,7 +18,7 @@ import { StandardPageFactory } from './_factories/_page-factories/standardpage.f
     NewsPageFactory,
     StandardPageFactory],
   controllers: [
-    AppController,
+    MainController,
     AdminController,
   ],
   providers: [AppService,

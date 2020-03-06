@@ -1,15 +1,20 @@
 
-import { TPageObject } from './../_utilities/custom.types';
+
 import { Controller, Get, Param, Res } from '@nestjs/common';
+
 import { FileService } from '../_services/file.service';
-import { ISite, ISitePageObject, IRouteResponse, IRouteObject } from '../_interfaces/ISite.interface';
-import { IDatabaseQueryResolution } from '../_interfaces/IDatabaserQueryResolution.interface';
-import { Log } from '../_utilities/base.constants';
-import { PAGE_FACTORIES } from '../_utilities/factories.constants';
+
+import { TPageObject } from './../_utilities/custom.types';
+
+import { ISite, ISitePageObject, IRouteResponse, IRouteObject, IDatabaseQueryResolution } from '../_interfaces/ISite.interface';
+
+import { Log, CALL_PAGE_FACTORY } from '../_utilities/base.constants';
+
+import { PageFactory } from './../_factories/page.factory'
 
 
 @Controller()
-export class AppController {
+export class MainController {
 
 
   private globalDataObject: ISite;
@@ -144,7 +149,7 @@ export class AppController {
       routeItem = this.globalDataObject.errorPage;
     }
 
-    return new PAGE_FACTORIES[routeItem.type](routeItem);
+    return new PageFactory(routeItem).init(CALL_PAGE_FACTORY);
 
   }
 
