@@ -20,15 +20,29 @@ import { ErrorPageFactory } from '../_factories/_page-factories/errorpage.factor
 // TextAreaFactory
 
 
+// BlogElementFactory
+// ButtonElementFactory
+// FeatureElementFactory
+// FormElementFactory
+// GenericElementFactory
+// ImageElementFactory
+// JumbotronElementFactory
+// LinklistElementFactory
+// NewsElementFactory
+// TextElementFactory
+
+
+
+
 export const PAGE_FACTORIES = {
-  'LANDING_PAGE': LandingPageFactory,
-  'STANDARD_PAGE': StandardPageFactory,
-  'FEATURED_PAGE': FeaturedPageFactory,
-  'CONTACT_PAGE': ContactPageFactory,
-  'NEWS_PAGE': NewsPageFactory,
   'BLOG_PAGE': BlogPageFactory,
-  'HOME_PAGE': HomePageFactory,
+  'CONTACT_PAGE': ContactPageFactory,
   'ERROR_PAGE': ErrorPageFactory,
+  'FEATURED_PAGE': FeaturedPageFactory,
+  'HOME_PAGE': HomePageFactory,
+  'LANDING_PAGE': LandingPageFactory,
+  'NEWS_PAGE': NewsPageFactory,
+  'STANDARD_PAGE': StandardPageFactory,
 };
 
 export const AREA_FACTORIES = {};
