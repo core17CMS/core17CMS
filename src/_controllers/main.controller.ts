@@ -114,11 +114,9 @@ export class MainController {
           .then((res: ISitePageObject) => {
             resolve(res);
           }).catch(() => {
-            console.log('CAUGHT ERROR!');
           reject('404 Page Not Found.');
         });
       } else {
-        console.log('CAUGHT ERROR!');
         reject('404 Page Not Found.');
       }
     });
