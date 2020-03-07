@@ -1,6 +1,6 @@
 
 
-import { Controller, Get, Param, Res } from '@nestjs/common';
+import { Controller, Get, Param, Res, Redirect } from '@nestjs/common';
 
 import { FileService } from '../_services/file.service';
 
@@ -51,20 +51,7 @@ export class MainController {
 
   @Get('')
   public homeRouteProvider(@Res() responseToSend: any): any {
-    this.routeConstructor({ id: 'home' }, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
-      return responseToSend.render(factoryResponse.options.template, {
-        pageData: {
-          routes: this.getPageProps('GET_ROUTES'),
-        },
-        viewData: factoryResponse.contentItems[0].areas,
-      });
-    }).catch((err: string) => {
-      return responseToSend.render('error.hbs', {
-        pageData: [],
-        viewData: err,
-      });
-    });
-
+    return responseToSend.redirect(303, '/home');
   }
 
   /*
@@ -72,9 +59,10 @@ export class MainController {
    */
 
   @Get(':id')
-  public customeRouteProvider(@Param() param: IRouteResponse, @Res() responseToSend: any): any {
+  public customRouteProvider(@Param() param: IRouteResponse, @Res() responseToSend: any): any {
 
     return this.routeConstructor(param, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
+      
       responseToSend.render(factoryResponse.options.template, {
         pageData: {
           routes: this.getPageProps('GET_ROUTES'),
@@ -114,24 +102,23 @@ export class MainController {
    * @Param Does the business of actually constructing the page object to be sent back to the client side.
    */
 
-  public routeConstructor(routeIdObject: IRouteResponse, globalDataObject: ISite): Promise<ISitePageObject | string> {
+  public async routeConstructor(routeIdObject: IRouteResponse, globalDataObject: ISite): Promise<ISitePageObject | string> {
 
-    let routeItem: ISitePageObject;
-    let localFactory: TPageObject;
+    const routeItem: ISitePageObject = await globalDataObject.pages.find(pageObject => pageObject.route.routeActual === routeIdObject.id);
+    const localFactory: TPageObject = await this.factoryBuilder(routeItem);
 
     return new Promise((resolve, reject) => {
-
-      routeItem = globalDataObject.pages.find(pageObject => pageObject.route.routeActual === routeIdObject.id);
-      localFactory = this.factoryBuilder(routeItem);
 
       if (localFactory) {
         localFactory.init()
           .then((res: ISitePageObject) => {
             resolve(res);
           }).catch(() => {
+            console.log('CAUGHT ERROR!');
           reject('404 Page Not Found.');
         });
       } else {
+        console.log('CAUGHT ERROR!');
         reject('404 Page Not Found.');
       }
     });
