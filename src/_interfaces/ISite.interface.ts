@@ -5,6 +5,7 @@ import { ContactPageFactory } from '../_factories/_page-factories/contactpage.fa
 import { NewsPageFactory } from '../_factories/_page-factories/newspage.factory';
 import { BlogPageFactory } from '../_factories/_page-factories/blogpage.factory';
 
+export type IAreaCollective = IBlogArea | IButtonArea | IFeatureArea | IFooterArea | IGenericArea | IJumbotronArea | ILinklistArea | INewsArea | IFormArea | IHeaderArea | ITextArea;
 
 export interface ISite {
   errorPage: ISitePageObject;
@@ -25,10 +26,12 @@ export interface IRouteObject {
   subRoutes: string[];
 }
 
+
 export interface ISiteContentItems {
   content: string;
-  areas: Array<IBlogArea | IButtonArea | IFeatureArea | IFooterArea | IGenericArea | IJumbotronArea | ILinklistArea | INewsArea | IFormArea | IHeaderArea | ITextArea>[]
+  areas: IAreaCollective[];
 }
+
 
 export interface ISiteOptions {
   template: string;

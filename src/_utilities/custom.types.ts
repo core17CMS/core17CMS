@@ -1,3 +1,4 @@
+import { IBlogArea, IButtonArea, IFeatureArea, IFooterArea, IGenericArea, IJumbotronArea, ILinklistArea, INewsArea, IFormArea, IHeaderArea, ITextArea } from './../_interfaces/ISite.interface';
 import { LandingPageFactory } from '../_factories/_page-factories/landingpage.factory';
 import { StandardPageFactory } from '../_factories/_page-factories/standardpage.factory';
 import { FeaturedPageFactory } from '../_factories/_page-factories/featuredpage.factory';

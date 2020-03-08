@@ -1,8 +1,9 @@
-import { ISitePageObject } from '../../_interfaces/ISite.interface';
+import { IAreaCollective } from './../../_interfaces/ISite.interface';
+// import { ISitePageObject } from '../../_interfaces/ISite.interface';
 
 export class GenericAreaFactory {
-  constructor(private contentItems: ISitePageObject) {
-    console.log('homepage constructor called!');
+  constructor(private areaObject: IAreaCollective) {
+    console.log('generic area constructor called!');
   }
 
   public init() {
@@ -12,7 +13,7 @@ export class GenericAreaFactory {
     return new Promise((resolve, reject) => {
 
       if (allGood) {
-        resolve(this.contentItems);
+        resolve(this.areaObject);
       } else {
         reject(console.log('Not so good.'));
       }
