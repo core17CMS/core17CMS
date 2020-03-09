@@ -1,11 +1,9 @@
-import { Log } from './../../_utilities/base.constants';
-import { CALL_AREA_FACTORY } from './../../_utilities/base.constants';
-import { PageFactory } from './../page.factory';
+import { Log } from '../../_utilities/base.constants';
+import { CALL_AREA_FACTORY } from '../../_utilities/base.constants';
+import { PageFactory } from '../page.factory';
 import { ISitePageObject, IAreaCollective, ISiteContentItems } from '../../_interfaces/ISite.interface';
 
 export class HomePageFactory {
-
-  public builtPageToReturn: ISitePageObject;
 
     constructor(private pageItems: ISitePageObject) {
       console.log('homepage constructor called!');
@@ -28,7 +26,7 @@ export class HomePageFactory {
     public constructPageAreas(): void {
       this.pageItems.contentItems.forEach((areaList: ISiteContentItems) => {
         areaList.areas.forEach((area: IAreaCollective) => {
-          const factory = new PageFactory(area).init(CALL_AREA_FACTORY);
+          const factory = new PageFactory(area).call(CALL_AREA_FACTORY);
           factory.init().then((areaContent: IAreaCollective) => {
             area = areaContent;
           }).catch((e) => {

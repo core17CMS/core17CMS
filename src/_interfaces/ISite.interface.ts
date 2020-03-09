@@ -6,6 +6,7 @@ import { NewsPageFactory } from '../_factories/_page-factories/newspage.factory'
 import { BlogPageFactory } from '../_factories/_page-factories/blogpage.factory';
 
 export type IAreaCollective = IBlogArea | IButtonArea | IFeatureArea | IFooterArea | IGenericArea | IJumbotronArea | ILinklistArea | INewsArea | IFormArea | IHeaderArea | ITextArea;
+export type IElementCollective = IBlogElement | IFeatureElement | IButtonElement | IFormElement | IGenericElement | IImageElement | IJumbotronElement | ILinklistElement | INewsElement | ITextElement;
 
 export interface ISite {
   errorPage: ISitePageObject;
@@ -63,17 +64,17 @@ export interface IBlogArea extends IAreaBase {
 
 export interface IButtonArea extends IAreaBase {
   allowedTypes: string[];
-  buttonArea: Array<IButtonElement>[];
+  buttonArea: IButtonElement[];
 }
 
 export interface IFeatureArea extends IAreaBase {
   allowedTypes: string[];
-  featureArea: Array<IFeatureElement>[];
+  featureArea: IFeatureElement[];
 }
 
 export interface IFooterArea extends IAreaBase {
   allowedTypes: string[];
-  footerArea: Array<IImageElement | ITextElement | ILinklistElement>[];
+  footerArea: IImageElement | ITextElement | ILinklistElement[];
 }
 
 export interface IGenericArea extends IAreaBase {
@@ -81,19 +82,19 @@ export interface IGenericArea extends IAreaBase {
   subTitle: string;
   text: string;
   allowedTypes: string[];
-  genericArea: Array<any | IGenericElement>[];
+  genericArea: IElementCollective[];
 }
 
 export interface IJumbotronArea extends IAreaBase {
   allowedTypes: string[];
-  jumbotronArea: Array<IJumbotronElement | IImageElement | ITextElement | IButtonElement>[];
+  jumbotronArea: IJumbotronElement | IImageElement | ITextElement | IButtonElement[];
 }
 
 export interface ILinklistArea extends IAreaBase {
   title: string;
   subTitle: string;
   allowedTypes: string[];
-  linklistArea: Array<ILinklistElement | IButtonElement>[];
+  linklistArea: ILinklistElement | IButtonElement[];
 }
 
 export interface INewsArea extends IAreaBase {
@@ -101,7 +102,7 @@ export interface INewsArea extends IAreaBase {
   subTitle: string;
   text: string;
   allowedTypes: string[];
-  newsArea: Array<IFeatureElement | INewsElement>[];
+  newsArea: IFeatureElement | INewsElement[];
 }
 
 export interface IFormArea extends IAreaBase {
@@ -109,12 +110,12 @@ export interface IFormArea extends IAreaBase {
   subTitle: string;
   text: string;
   allowedTypes: string[];
-  formArea: Array<ITextElement | IButtonElement | IFormElement>[];
+  formArea: ITextElement | IButtonElement | IFormElement[];
 }
 
 export interface IHeaderArea extends IAreaBase {
   allowedTypes: string[];
-  headerArea: Array<ITextElement | IImageElement | ILinklistElement>[];
+  headerArea: ITextElement | IImageElement | ILinklistElement[];
 }
 
 export interface ITextArea extends IAreaBase {

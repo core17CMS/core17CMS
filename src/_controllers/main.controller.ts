@@ -4,7 +4,7 @@ import { Controller, Get, Param, Res, Redirect } from '@nestjs/common';
 
 import { FileService } from '../_services/file.service';
 
-import { TPageObject } from './../_utilities/custom.types';
+import { TAreaObject, TElementObject, TPageObject } from './../_utilities/custom.types';
 
 import { ISite, ISitePageObject, IRouteResponse, IRouteObject, IDatabaseQueryResolution } from '../_interfaces/ISite.interface';
 
@@ -105,7 +105,7 @@ export class MainController {
   public async routeConstructor(routeIdObject: IRouteResponse, globalDataObject: ISite): Promise<ISitePageObject | string> {
 
     const routeItem: ISitePageObject = await globalDataObject.pages.find(pageObject => pageObject.route.routeActual === routeIdObject.id);
-    const localFactory: TPageObject = await this.factoryBuilder(routeItem);
+    const localFactory: TPageObject | TAreaObject | TElementObject = await this.factoryBuilder(routeItem);
 
     return new Promise((resolve, reject) => {
 
@@ -128,13 +128,13 @@ export class MainController {
    * @Param Returns the appropriate page factory in an uninitialised state.
    */
 
-  public factoryBuilder(routeItem: ISitePageObject): TPageObject {
+  public factoryBuilder(routeItem: ISitePageObject): TPageObject | TAreaObject | TElementObject {
 
     if (!routeItem) {
       routeItem = this.globalDataObject.errorPage;
     }
 
-    return new PageFactory(routeItem).init(CALL_PAGE_FACTORY);
+    return new PageFactory(routeItem).call(CALL_PAGE_FACTORY);
 
   }
 
