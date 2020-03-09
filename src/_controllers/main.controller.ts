@@ -24,11 +24,7 @@ export class MainController {
    * @Param construct page.
    */
 
-  constructor() {
-
-    this.initialiseDatabaseState();
-
-  }
+  constructor() {}
 
 
   /*
@@ -59,7 +55,9 @@ export class MainController {
    */
 
   @Get(':id')
-  public customRouteProvider(@Param() param: IRouteResponse, @Res() responseToSend: any): any {
+  public async customRouteProvider(@Param() param: IRouteResponse, @Res() responseToSend: any) {
+
+    await this.initialiseDatabaseState();
 
     return this.routeConstructor(param, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
       

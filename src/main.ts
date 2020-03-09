@@ -6,12 +6,9 @@ import { join } from 'path';
 import { AppModule } from './app.module';
 import * as hbs from 'hbs';
 import * as fs from 'fs';
-// import * as variable from 'handlebars-helper-variable';
 
 
 async function bootstrap() {
-
-  // let context = {};
 
   const app = await NestFactory.create<NestExpressApplication>(
     AppModule,
@@ -31,13 +28,11 @@ async function bootstrap() {
     });
   };
 
-
-
   app.useStaticAssets(join(__dirname, '..', 'public'));
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('hbs');
 
-  hbs.registerHelper('var',function(name, value, context){
+  hbs.registerHelper('var',function(name, value){
     this[name] = value;
   });
 
@@ -46,8 +41,6 @@ async function bootstrap() {
   loadComponents('partials');
 
   app.set('view options', { layout: '/partials/index.hbs' });
-
-
 
   await app.listen(4000);
 }

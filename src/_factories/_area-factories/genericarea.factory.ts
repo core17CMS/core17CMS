@@ -7,7 +7,7 @@ export class GenericAreaFactory {
     console.log('generic area constructor called!');
   }
 
-  public async init() {
+  public async init(): Promise<IGenericArea> {
 
     await this.constructPageAreas();
 
