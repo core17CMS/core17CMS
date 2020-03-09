@@ -54,7 +54,12 @@ export interface IDatabaseQueryResolution {
 interface IAreaBase {
   areaName: string;
   type: string;
-  options: any;
+  options: IAreaOptions;
+}
+
+export interface IAreaOptions {
+  selectedDisplayClass: string;
+  displayClassOptions: string[];
 }
 
 export interface IBlogArea extends IAreaBase {
@@ -130,9 +135,13 @@ export interface ITextArea extends IAreaBase {
 interface IElementBase {
   elementName: string;
   type: string;
-  options: any;
+  options: IElementOptions;
 }
 
+export interface IElementOptions {
+  selectedDisplayClass: string;
+  displayClassOptions: string[];
+}
 
 export interface IGenericElement extends IElementBase {
   genericElement: IGenericElementFunctionality;

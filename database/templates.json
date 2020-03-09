@@ -1,126 +1,276 @@
 {
   "areaTypes": [
-
     {
       "areaName": "blog-area",
       "type": "BLOG_AREA",
-      "options": {},
-
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "title": "",
       "subTitle": "",
       "text": "",
-      "allowedTypes": ["FEATURE_ELEMENT", "BLOG_ELEMENT"],
+      "allowedTypes": [
+        "FEATURE_ELEMENT",
+        "BLOG_ELEMENT"
+      ],
       "blogArea": []
     },
-
     {
       "areaName": "button-area",
       "type": "BUTTON_AREA",
-      "options": {},
-      "allowedTypes": ["BUTTON_ELEMENT"],
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
+      "allowedTypes": [
+        "BUTTON_ELEMENT"
+      ],
       "buttonArea": []
     },
-
     {
       "areaName": "feature-area",
       "type": "FEATURE_AREA",
-      "options": {},
-      "allowedTypes": ["FEATURE_ELEMENT"],
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
+      "allowedTypes": [
+        "FEATURE_ELEMENT"
+      ],
       "featureArea": []
     },
-
     {
       "areaName": "footer-area",
       "type": "FOOTER_AREA",
-      "options": {},
-      "allowedTypes": ["IMAGE_ELEMENT", "TEXT_ELEMENT", "LINKLIST_ELEMENT"],
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
+      "allowedTypes": [
+        "IMAGE_ELEMENT",
+        "TEXT_ELEMENT",
+        "LINKLIST_ELEMENT"
+      ],
       "featureArea": []
     },
-
     {
       "areaName": "generic-area",
       "type": "GENERIC_AREA",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "title": "",
       "subTitle": "",
       "text": "",
-      "allowedTypes": ["ALL"],
+      "allowedTypes": [
+        "ALL"
+      ],
       "genericArea": []
     },
-
-
-
     {
       "areaName": "jumbotron-area",
       "type": "JUMBOTRON_AREA",
-      "options": {},
-      "allowedTypes": ["JUMBOTRON_ELEMENT", "IMAGE_ELEMENT", "TEXT_ELEMENT", "BUTTON_ELEMENT"],
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
+      "allowedTypes": [
+        "JUMBOTRON_ELEMENT",
+        "IMAGE_ELEMENT",
+        "TEXT_ELEMENT",
+        "BUTTON_ELEMENT"
+      ],
       "jumbotronArea": []
     },
-
     {
       "areaName": "linklist-area",
       "type": "LINKLIST_AREA",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "title": "",
       "subTitle": "",
-      "allowedTypes": ["LINKLIST_ELEMENT", "BUTTON_ELEMENT"],
+      "allowedTypes": [
+        "LINKLIST_ELEMENT",
+        "BUTTON_ELEMENT"
+      ],
       "linklistArea": []
     },
-
     {
       "areaName": "news-area",
       "type": "NEWS_AREA",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "title": "",
       "subTitle": "",
       "text": "",
-      "allowedTypes": ["FEATURE_ELEMENT", "NEWS_ELEMENT"],
+      "allowedTypes": [
+        "FEATURE_ELEMENT",
+        "NEWS_ELEMENT"
+      ],
       "newsArea": []
     },
-
     {
       "areaName": "form-area",
       "type": "FORM_AREA",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "title": "",
       "subTitle": "",
       "text": "",
-      "allowedTypes": ["TEXT_ELEMENT", "BUTTON_ELEMENT", "FORM_ELEMENT"],
+      "allowedTypes": [
+        "TEXT_ELEMENT",
+        "BUTTON_ELEMENT",
+        "FORM_ELEMENT"
+      ],
       "formArea": []
     },
     {
       "areaName": "header-area",
       "type": "HEADER_AREA",
-      "options": {},
-      "allowedTypes": ["IMAGE_ELEMENT", "TEXT_ELEMENT", "LINKLIST_ELEMENT"],
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
+      "allowedTypes": [
+        "IMAGE_ELEMENT",
+        "TEXT_ELEMENT",
+        "LINKLIST_ELEMENT"
+      ],
       "headerArea": []
     },
     {
       "areaName": "text-area",
       "type": "TEXT_AREA",
-      "options": {},
-      "allowedTypes": ["TEXT_ELEMENT", "LINKLIST_ELEMENT", "BUTTON_ELEMENT"],
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
+      "allowedTypes": [
+        "TEXT_ELEMENT",
+        "LINKLIST_ELEMENT",
+        "BUTTON_ELEMENT"
+      ],
       "textArea": []
     }
-
   ],
-
   "elementTypes": [
-
     {
       "elementName": "generic-element",
       "type": "GENERIC_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "genericElement": {
         "content": "Generic Element String1"
       }
     },
-
     {
       "elementName": "linklist-element",
       "type": "LINKLIST_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "linkListElement": {
         "listTitle": "",
         "linkList": [
@@ -131,21 +281,39 @@
         ]
       }
     },
-
     {
       "elementName": "button-element",
       "type": "BUTTON_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "buttonElement": {
         "buttonText": "",
         "buttonUrl": ""
       }
     },
-
     {
       "elementName": "jumbotron-element",
       "type": "JUMBOTRON_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "jumbotronElement": {
         "image": "",
         "video": "",
@@ -155,11 +323,20 @@
         "buttonUrl": ""
       }
     },
-
     {
       "elementName": "feature-element",
       "type": "FEATURE_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "featureElement": {
         "image": "",
         "title": "",
@@ -168,51 +345,96 @@
         "buttonUrl": ""
       }
     },
-
     {
       "elementName": "image-element",
       "type": "IMAGE_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "imageElement": {
         "image": ""
       }
     },
-
     {
       "elementName": "text-element",
       "type": "TEXT_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "textElement": {
         "text": ""
       }
     },
-
     {
       "elementName": "news-element",
       "type": "NEWS_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "newsElement": {
         "title": "",
         "text": "",
         "date": ""
       }
     },
-
     {
       "elementName": "blog-element",
       "type": "BLOG_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "blogElement": {
         "title": "",
         "text": "",
         "date": ""
       }
     },
-
     {
       "elementName": "form-element",
       "type": "FORM_ELEMENT",
-      "options": {},
+      "options": {
+        "selectedDisplayClass": "full",
+        "displayClassOptions": [
+          "quarter",
+          "third",
+          "half",
+          "two-thirds",
+          "three-quarters",
+          "full"
+        ]
+      },
       "formElement": {
         "title": "",
         "text": "",
@@ -220,6 +442,5 @@
         "submitButtonText": ""
       }
     }
-
   ]
 }
