@@ -60,12 +60,17 @@ export class MainController {
     await this.initialiseDatabaseState();
 
     return this.routeConstructor(param, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
+
+      const template = factoryResponse.options.template;
+      const areas = factoryResponse.contentItems[0].areas;
+
+      // add a title object?
       
-      responseToSend.render(factoryResponse.options.template, {
+      responseToSend.render(template, {
         pageData: {
           routes: this.getPageProps('GET_ROUTES'),
         },
-        viewData: factoryResponse.contentItems[0].areas,
+        viewData: areas,
       });
     }).catch((err: string) => {
       responseToSend.render('error.hbs', {

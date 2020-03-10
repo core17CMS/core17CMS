@@ -22,7 +22,10 @@ export class NewsPageFactory {
   }
 
   public constructPageAreas(): void {
-    this.pageItems.contentItems.forEach((areaList: ISiteContentItems) => {
+
+    const newsPageContentItems = this.pageItems.contentItems;
+
+    newsPageContentItems.forEach((areaList: ISiteContentItems) => {
       areaList.areas.forEach((area: IAreaCollective) => {
         const factory = new PageFactory(area).call(CALL_AREA_FACTORY);
         factory.init().then((areaContent: IAreaCollective) => {
