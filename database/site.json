@@ -105,6 +105,8 @@
       "route": {
         "routeAlias": "Home Page",
         "routeActual": "home",
+        "title": "Home Page",
+        "isStartPage": false,
         "routeShown": true,
         "subRoutes": []
       },
@@ -205,6 +207,8 @@
       "route": {
         "routeAlias": "Landing Page",
         "routeActual": "landingpage",
+        "title": "Landing Page",
+        "isStartPage": false,
         "routeShown": true,
         "subRoutes": []
       },
@@ -305,6 +309,8 @@
       "route": {
         "routeAlias": "Standard Page",
         "routeActual": "standardpage",
+        "title": "Landing page",
+        "isStartPage": false,
         "routeShown": true,
         "subRoutes": []
       },
@@ -405,6 +411,8 @@
       "route": {
         "routeAlias": "Featured Page",
         "routeActual": "featuredpage",
+        "title": "Featured page",
+        "isStartPage": false,
         "routeShown": true,
         "subRoutes": []
       },
@@ -505,6 +513,8 @@
       "route": {
         "routeAlias": "Blog Page",
         "routeActual": "blogpage",
+        "title": "Blog page",
+        "isStartPage": false,
         "routeShown": true,
         "subRoutes": []
       },
@@ -605,6 +615,8 @@
       "route": {
         "routeAlias": "News Page",
         "routeActual": "newspage",
+        "title": "News page",
+        "isStartPage": false,
         "routeShown": true,
         "subRoutes": []
       },
@@ -705,6 +717,8 @@
       "route": {
         "routeAlias": "Contact Page",
         "routeActual": "contactpage",
+        "title": "Contact page",
+        "isStartPage": false,
         "routeShown": true,
         "subRoutes": []
       },

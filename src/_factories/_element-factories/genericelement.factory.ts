@@ -2,6 +2,7 @@ import { IGenericElement, IGenericElementFunctionality } from '../../_interfaces
 
 export class GenericElementFactory {
   constructor(private elementObject: IGenericElement) {
+    console.log('generic element factory called');
   }
 
   public async init(): Promise<IGenericElement> {

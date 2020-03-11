@@ -23,6 +23,8 @@ export interface ISitePageObject {
 export interface IRouteObject {
   routeString: string;
   routeActual: string;
+  title: string;
+  isStartPage: boolean;
   routeShown: boolean;
   subRoutes: string[];
 }

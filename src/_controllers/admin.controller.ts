@@ -1,4 +1,4 @@
-import { Controller, Get, Res, Post, Body, Headers } from '@nestjs/common';
+import { Controller, Get, Res, Post, Body, Headers, Req } from '@nestjs/common';
 import { FileService } from '../_services/file.service';
 import { ISite, IDatabaseQueryResolution } from '../_interfaces/ISite.interface';
 import { Log } from '../_utilities/base.constants';
@@ -26,6 +26,21 @@ export class AdminController {
     });
   }
 
+  @Get('gettemplates')
+  public async serveTeplates() {
+      let templatePayload = {};
+      await FileService.querySiteTemplates().then((response: any) => {
+        // console.log(response);
+        templatePayload = response.payload;
+        // return 'ok';
+      }).catch(() => {
+        // return "Error!";
+      })
+      // console.log('ye');
+      // console.log(templatePayload);
+      // responseToSend.json(templatePayload);
+      return templatePayload;
+  }
 
   @Get()
   public serveCorePanelAdmin(@Res() responseToSend: any) {

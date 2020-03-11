@@ -6,6 +6,24 @@ import * as fs from 'fs';
 @Injectable()
 export class FileService {
 
+  static querySiteTemplates(): any {
+    return new Promise<any>((resolve, reject) => {
+      try {
+        const file: any = fs.readFileSync(`database/templates.json`);
+        resolve(
+          {
+            status: STATUS_OK,
+            payload: JSON.parse(file),
+          },
+        );
+      } catch (error) {
+        reject({
+          status: STATUS_FAILED,
+          payload: `There was a problem querying the database. ${error}`,
+        });
+      }
+    });
+  }
 
   static queryDb(dbFileString: string): any {
     return new Promise<IDatabaseQueryResolution>((resolve, reject) => {
