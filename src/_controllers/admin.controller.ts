@@ -30,15 +30,10 @@ export class AdminController {
   public async serveTeplates() {
       let templatePayload = {};
       await FileService.querySiteTemplates().then((response: any) => {
-        // console.log(response);
         templatePayload = response.payload;
-        // return 'ok';
       }).catch(() => {
-        // return "Error!";
+        templatePayload = "Error!";
       })
-      // console.log('ye');
-      // console.log(templatePayload);
-      // responseToSend.json(templatePayload);
       return templatePayload;
   }
 

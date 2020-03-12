@@ -1,4 +1,146 @@
 {
+  "pagesTypes": [
+    {
+      "route": {
+        "routeAlias": "Home Page",
+        "routeActual": "home",
+        "title": "Home Page",
+        "isStartPage": false,
+        "routeShown": true,
+        "subRoutes": []
+      },
+      "type": "HOME_PAGE",
+      "options": {
+        "template": "templates/home_page.hbs"
+      },
+      "contentItems": [
+        {
+          "content": "Home page test content.",
+          "areas": []
+        }
+      ]
+    },
+    {
+      "route": {
+        "routeAlias": "Landing Page",
+        "routeActual": "landingpage",
+        "title": "Landing Page",
+        "isStartPage": false,
+        "routeShown": true,
+        "subRoutes": []
+      },
+      "type": "LANDING_PAGE",
+      "options": {
+        "template": "templates/landing_page.hbs"
+      },
+      "contentItems": [
+        {
+          "content": "Landing page test content.",
+          "areas": []
+        }
+      ]
+    },
+    {
+      "route": {
+        "routeAlias": "Standard Page",
+        "routeActual": "standardpage",
+        "title": "Landing page",
+        "isStartPage": false,
+        "routeShown": true,
+        "subRoutes": []
+      },
+      "type": "STANDARD_PAGE",
+      "options": {
+        "template": "templates/standard_page.hbs"
+      },
+      "contentItems": [
+        {
+          "content": "standard page test content.",
+          "areas": []
+        }
+      ]
+    },
+    {
+      "route": {
+        "routeAlias": "Featured Page",
+        "routeActual": "featuredpage",
+        "title": "Featured page",
+        "isStartPage": false,
+        "routeShown": true,
+        "subRoutes": []
+      },
+      "type": "FEATURED_PAGE",
+      "options": {
+        "template": "templates/featured_page.hbs"
+      },
+      "contentItems": [
+        {
+          "content": "Featured page test content.",
+          "areas": []
+        }
+      ]
+    },
+    {
+      "route": {
+        "routeAlias": "Blog Page",
+        "routeActual": "blogpage",
+        "title": "Blog page",
+        "isStartPage": false,
+        "routeShown": true,
+        "subRoutes": []
+      },
+      "type": "BLOG_PAGE",
+      "options": {
+        "template": "templates/blog_page.hbs"
+      },
+      "contentItems": [
+        {
+          "content": "Blog page test content.",
+          "areas": []
+        }
+      ]
+    },
+    {
+      "route": {
+        "routeAlias": "News Page",
+        "routeActual": "newspage",
+        "title": "News page",
+        "isStartPage": false,
+        "routeShown": true,
+        "subRoutes": []
+      },
+      "type": "NEWS_PAGE",
+      "options": {
+        "template": "templates/news_page.hbs"
+      },
+      "contentItems": [
+        {
+          "content": "News page test content.",
+          "areas": []
+        }
+      ]
+    },
+    {
+      "route": {
+        "routeAlias": "Contact Page",
+        "routeActual": "contactpage",
+        "title": "Contact page",
+        "isStartPage": false,
+        "routeShown": true,
+        "subRoutes": []
+      },
+      "type": "CONTACT_PAGE",
+      "options": {
+        "template": "templates/landing_page.hbs"
+      },
+      "contentItems": [
+        {
+          "content": "Contact page test content.",
+          "areas": []
+        }
+      ]
+    }
+  ],
   "areaTypes": [
     {
       "areaName": "blog-area",
