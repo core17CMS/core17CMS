@@ -26,7 +26,7 @@ export class AdminController {
     });
   }
 
-  @Get('gettemplates')
+  @Get('tmps')
   public async serveTeplates() {
       let templatePayload = {};
       await FileService.querySiteTemplates().then((response: any) => {
