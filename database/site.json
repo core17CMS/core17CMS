@@ -106,7 +106,7 @@
         "routeAlias": "Home Page",
         "routeActual": "home",
         "title": "Home Page",
-        "isStartPage": false,
+        "isStartPage": true,
         "routeShown": true,
         "subRoutes": []
       },

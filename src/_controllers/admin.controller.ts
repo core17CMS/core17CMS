@@ -27,7 +27,7 @@ export class AdminController {
   }
 
   @Get('tmps')
-  public async serveTeplates() {
+  public async serveTemplates() {
       let templatePayload = {};
       await FileService.querySiteTemplates().then((response: any) => {
         templatePayload = response.payload;
@@ -35,6 +35,18 @@ export class AdminController {
         templatePayload = "Error!";
       })
       return templatePayload;
+  }
+
+  @Get('base')
+  public async serveBase() {
+      let basePayload = {};
+      await FileService.queryDb('site').then((response: any) => {
+        basePayload = response.payload;
+      }).catch((error: any) => {
+          Log(error);
+          basePayload = "ERROR";
+      });
+      return basePayload;
   }
 
   @Get()
