@@ -1,5 +1,4 @@
 {
-
   "errorPage": {
     "route": {
       "routeAlias": "Error Page",
@@ -8,6 +7,8 @@
       "subRoutes": []
     },
     "type": "ERROR_PAGE",
+    "pageId": 0,
+    "order": 0,
     "options": {
       "template": "templates/error_page.hbs"
     },
@@ -18,10 +19,14 @@
           {
             "areaName": "generic-area",
             "type": "GENERIC_AREA",
+            "areaId": 21,
+            "order": 1,
             "genericArea": [
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 69,
+                "order": 1,
                 "genericElement": {
                   "content": "Generic Element String1"
                 }
@@ -29,6 +34,8 @@
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 70,
+                "order": 2,
                 "genericElement": {
                   "content": "Generic Element String2"
                 }
@@ -36,6 +43,8 @@
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 71,
+                "order": 3,
                 "genericElement": {
                   "content": "Generic Element String3"
                 }
@@ -45,10 +54,14 @@
           {
             "areaName": "generic-area",
             "type": "GENERIC_AREA",
+            "areaId": 22,
+            "order": 2,
             "genericArea": [
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 66,
+                "order": 1,
                 "genericElement": {
                   "content": "Generic Element String4"
                 }
@@ -56,6 +69,8 @@
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 67,
+                "order": 2,
                 "genericElement": {
                   "content": "Generic Element String5"
                 }
@@ -63,6 +78,8 @@
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 68,
+                "order": 3,
                 "genericElement": {
                   "content": "Generic Element String6"
                 }
@@ -72,10 +89,14 @@
           {
             "areaName": "generic-area",
             "type": "GENERIC_AREA",
+            "areaId": 23,
+            "order": 3,
             "genericArea": [
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 63,
+                "order": 1,
                 "genericElement": {
                   "content": "Generic Element String7"
                 }
@@ -83,6 +104,8 @@
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 64,
+                "order": 2,
                 "genericElement": {
                   "content": "Generic Element String8"
                 }
@@ -90,6 +113,8 @@
               {
                 "elementName": "generic-element",
                 "type": "GENERIC_ELEMENT",
+                "elementId": 65,
+                "order": 3,
                 "genericElement": {
                   "content": "Generic Element String9"
                 }
@@ -111,6 +136,8 @@
         "subRoutes": []
       },
       "type": "HOME_PAGE",
+      "pageId": 1,
+      "order": 1,
       "options": {
         "template": "templates/home_page.hbs"
       },
@@ -121,10 +148,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 0,
+              "order": 1,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 0,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
@@ -132,6 +163,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 1,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String2"
                   }
@@ -139,6 +172,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 2,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String3"
                   }
@@ -148,10 +183,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 1,
+              "order": 2,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 3,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String4"
                   }
@@ -159,6 +198,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 4,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String5"
                   }
@@ -166,6 +207,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 5,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String6"
                   }
@@ -175,10 +218,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 2,
+              "order": 3,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 6,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String7"
                   }
@@ -186,6 +233,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 7,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String8"
                   }
@@ -193,6 +242,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 8,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String9"
                   }
@@ -213,6 +264,8 @@
         "subRoutes": []
       },
       "type": "LANDING_PAGE",
+      "pageId": 2,
+      "order": 2,
       "options": {
         "template": "templates/landing_page.hbs"
       },
@@ -223,10 +276,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 3,
+              "order": 1,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 9,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
@@ -234,6 +291,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 10,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String2"
                   }
@@ -241,6 +300,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 11,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String3"
                   }
@@ -250,10 +311,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 4,
+              "order": 2,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 12,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String4"
                   }
@@ -261,6 +326,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 13,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String5"
                   }
@@ -268,6 +335,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 14,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String6"
                   }
@@ -277,10 +346,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 5,
+              "order": 3,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 15,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String7"
                   }
@@ -288,6 +361,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 16,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String8"
                   }
@@ -295,6 +370,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 17,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String9"
                   }
@@ -315,6 +392,8 @@
         "subRoutes": []
       },
       "type": "STANDARD_PAGE",
+      "pageId": 3,
+      "order": 3,
       "options": {
         "template": "templates/standard_page.hbs"
       },
@@ -325,10 +404,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 6,
+              "order": 1,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 18,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
@@ -336,6 +419,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 19,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String2"
                   }
@@ -343,6 +428,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 20,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String3"
                   }
@@ -352,10 +439,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 7,
+              "order": 2,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 21,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String4"
                   }
@@ -363,6 +454,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 22,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String5"
                   }
@@ -370,6 +463,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 23,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String6"
                   }
@@ -379,10 +474,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 8,
+              "order": 3,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 24,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String7"
                   }
@@ -390,6 +489,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 25,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String8"
                   }
@@ -397,6 +498,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 26,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String9"
                   }
@@ -417,6 +520,8 @@
         "subRoutes": []
       },
       "type": "FEATURED_PAGE",
+      "pageId": 4,
+      "order": 4,
       "options": {
         "template": "templates/featured_page.hbs"
       },
@@ -427,10 +532,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 9,
+              "order": 1,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 27,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
@@ -438,6 +547,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 28,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String2"
                   }
@@ -445,6 +556,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 29,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String3"
                   }
@@ -454,10 +567,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 10,
+              "order": 2,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 30,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String4"
                   }
@@ -465,6 +582,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 31,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String5"
                   }
@@ -472,6 +591,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 32,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String6"
                   }
@@ -481,10 +602,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 11,
+              "order": 3,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 33,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String7"
                   }
@@ -492,6 +617,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 34,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String8"
                   }
@@ -499,6 +626,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 35,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String9"
                   }
@@ -519,6 +648,8 @@
         "subRoutes": []
       },
       "type": "BLOG_PAGE",
+      "pageId": 5,
+      "order": 5,
       "options": {
         "template": "templates/blog_page.hbs"
       },
@@ -529,10 +660,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 12,
+              "order": 1,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 36,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
@@ -540,6 +675,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 37,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String2"
                   }
@@ -547,6 +684,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 38,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String3"
                   }
@@ -556,10 +695,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 13,
+              "order": 2,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 39,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String4"
                   }
@@ -567,6 +710,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 40,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String5"
                   }
@@ -574,6 +719,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 41,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String6"
                   }
@@ -583,10 +730,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 14,
+              "order": 3,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 42,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String7"
                   }
@@ -594,6 +745,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 43,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String8"
                   }
@@ -601,6 +754,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 44,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String9"
                   }
@@ -621,6 +776,8 @@
         "subRoutes": []
       },
       "type": "NEWS_PAGE",
+      "pageId": 6,
+      "order": 6,
       "options": {
         "template": "templates/news_page.hbs"
       },
@@ -631,10 +788,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 15,
+              "order": 1,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 45,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
@@ -642,6 +803,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 46,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String2"
                   }
@@ -649,6 +812,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 47,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String3"
                   }
@@ -658,10 +823,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 16,
+              "order": 2,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 48,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String4"
                   }
@@ -669,6 +838,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 49,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String5"
                   }
@@ -676,6 +847,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 50,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String6"
                   }
@@ -685,10 +858,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 17,
+              "order": 3,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 51,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String7"
                   }
@@ -696,6 +873,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 52,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String8"
                   }
@@ -703,6 +882,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 53,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String9"
                   }
@@ -723,6 +904,8 @@
         "subRoutes": []
       },
       "type": "CONTACT_PAGE",
+      "pageId": 7,
+      "order": 7,
       "options": {
         "template": "templates/landing_page.hbs"
       },
@@ -733,10 +916,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 18,
+              "order": 1,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 54,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String1"
                   }
@@ -744,6 +931,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 55,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String2"
                   }
@@ -751,6 +940,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 56,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String3"
                   }
@@ -760,10 +951,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 19,
+              "order": 2,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 57,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String4"
                   }
@@ -771,6 +966,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 58,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String5"
                   }
@@ -778,6 +975,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 59,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String6"
                   }
@@ -787,10 +986,14 @@
             {
               "areaName": "generic-area",
               "type": "GENERIC_AREA",
+              "areaId": 20,
+              "order": 3,
               "genericArea": [
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 60,
+                  "order": 1,
                   "genericElement": {
                     "content": "Generic Element String7"
                   }
@@ -798,6 +1001,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 61,
+                  "order": 2,
                   "genericElement": {
                     "content": "Generic Element String8"
                   }
@@ -805,6 +1010,8 @@
                 {
                   "elementName": "generic-element",
                   "type": "GENERIC_ELEMENT",
+                  "elementId": 62,
+                  "order": 3,
                   "genericElement": {
                     "content": "Generic Element String9"
                   }

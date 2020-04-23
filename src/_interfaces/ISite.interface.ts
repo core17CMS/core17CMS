@@ -5,8 +5,29 @@ import { ContactPageFactory } from '../_factories/_page-factories/contactpage.fa
 import { NewsPageFactory } from '../_factories/_page-factories/newspage.factory';
 import { BlogPageFactory } from '../_factories/_page-factories/blogpage.factory';
 
-export type IAreaCollective = IBlogArea | IButtonArea | IFeatureArea | IFooterArea | IGenericArea | IJumbotronArea | ILinklistArea | INewsArea | IFormArea | IHeaderArea | ITextArea;
-export type IElementCollective = IBlogElement | IFeatureElement | IButtonElement | IFormElement | IGenericElement | IImageElement | IJumbotronElement | ILinklistElement | INewsElement | ITextElement;
+export type IAreaCollective =
+  IBlogArea
+  | IButtonArea
+  | IFeatureArea
+  | IFooterArea
+  | IGenericArea
+  | IJumbotronArea
+  | ILinklistArea
+  | INewsArea
+  | IFormArea
+  | IHeaderArea
+  | ITextArea;
+export type IElementCollective =
+  IBlogElement
+  | IFeatureElement
+  | IButtonElement
+  | IFormElement
+  | IGenericElement
+  | IImageElement
+  | IJumbotronElement
+  | ILinklistElement
+  | INewsElement
+  | ITextElement;
 
 export interface ISite {
   errorPage: ISitePageObject;
@@ -16,6 +37,8 @@ export interface ISite {
 export interface ISitePageObject {
   route: IRouteObject;
   type: string;
+  pageId: number;
+  order: number;
   options: ISiteOptions;
   contentItems: ISiteContentItems[];
 }
@@ -50,12 +73,13 @@ export interface IDatabaseQueryResolution {
 }
 
 
-
 // AREA INTERFACES //
 
 interface IAreaBase {
   areaName: string;
   type: string;
+  areaId: number;
+  order: number;
   options: IAreaOptions;
 }
 
@@ -131,12 +155,13 @@ export interface ITextArea extends IAreaBase {
 }
 
 
-
 // ELEMENT INTERFACES //
 
 interface IElementBase {
   elementName: string;
   type: string;
+  elementId: number;
+  order: number;
   options: IElementOptions;
 }
 
@@ -148,6 +173,7 @@ export interface IElementOptions {
 export interface IGenericElement extends IElementBase {
   genericElement: IGenericElementFunctionality;
 }
+
 export interface IGenericElementFunctionality {
   content: string;
 }
@@ -156,10 +182,12 @@ export interface IGenericElementFunctionality {
 export interface ILinklistElement extends IElementBase {
   linklistElement: ILinklistElementFunctionality;
 }
+
 export interface ILinklistElementFunctionality {
   linklistTitle: string;
   linkList: ILinklistElementLinkListActual[];
 }
+
 export interface ILinklistElementLinkListActual {
   linkText: string;
   linkUrl: string;
@@ -169,6 +197,7 @@ export interface ILinklistElementLinkListActual {
 export interface IButtonElement extends IElementBase {
   buttonElement: IButtonElementFunctionality;
 }
+
 export interface IButtonElementFunctionality {
   buttonText: string;
   buttonUrl: string;
@@ -178,6 +207,7 @@ export interface IButtonElementFunctionality {
 export interface IJumbotronElement extends IElementBase {
   jumbotronElement: IJumbotronElementFunctionality;
 }
+
 export interface IJumbotronElementFunctionality {
   image: any;
   video: any;
@@ -191,6 +221,7 @@ export interface IJumbotronElementFunctionality {
 export interface IFeatureElement extends IElementBase {
   featureElement: IFeatureElementFunctionality;
 }
+
 export interface IFeatureElementFunctionality {
   image: any;
   title: string;
@@ -203,6 +234,7 @@ export interface IFeatureElementFunctionality {
 export interface IImageElement extends IElementBase {
   imageElement: IImageElementFunctionality;
 }
+
 export interface IImageElementFunctionality {
   image: any;
 }
@@ -211,6 +243,7 @@ export interface IImageElementFunctionality {
 export interface ITextElement extends IElementBase {
   textElement: ITextElementFunctionality;
 }
+
 export interface ITextElementFunctionality {
   text: string;
 }
@@ -219,6 +252,7 @@ export interface ITextElementFunctionality {
 export interface IBlogElement extends IElementBase {
   blogElement: IBlogElementFunctionality;
 }
+
 export interface IBlogElementFunctionality {
   title: string;
   text: string;
@@ -229,6 +263,7 @@ export interface IBlogElementFunctionality {
 export interface INewsElement extends IElementBase {
   newsElement: INewsElementFunctionality;
 }
+
 export interface INewsElementFunctionality {
   title: string;
   text: string;
@@ -239,6 +274,7 @@ export interface INewsElementFunctionality {
 export interface IFormElement extends IElementBase {
   formElement: IFormElementFunctionality;
 }
+
 export interface IFormElementFunctionality {
   title: string;
   text: string;

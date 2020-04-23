@@ -52,7 +52,7 @@ bootstrap();
 console.log(`
 
 
-      ### NEST APPLICATION RUNNING ON http://localhost:3000 ###
+      ### NEST APPLICATION RUNNING ON http://localhost:4000 ###
 
 
 `);

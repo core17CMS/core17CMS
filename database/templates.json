@@ -1,7 +1,37 @@
 {
-  "pageTypeList": ["HOME_PAGE", "LANDING_PAGE", "STANDARD_PAGE", "BLOG_PAGE", "NEWS_PAGE", "CONTACT_PAGE"],
-  "areaTypeList": ["BLOG_AREA", "BUTTON_AREA", "FEATURE_AREA", "FOOTER_AREA", "GENERIC_AREA", "JUMBOTRON_AREA", "LINKLIST_AREA", "NEWS_AREA", "FORM_AREA", "HEADER_AREA", "TEXT_AREA"],
-  "elementTypeList": ["GENERIC_ELEMENT", "LINKLIST_ELEMENT", "BUTTON_ELEMENT", "JUMBOTRON_ELEMENT", "FEATURE_ELEMENT", "IMAGE_ELEMENT", "TEXT_ELEMENT", "NEWS_ELEMENT", "BLOG_ELEMENT", "FORM_ELEMENT"],
+  "pageTypeList": [
+    "HOME_PAGE",
+    "LANDING_PAGE",
+    "STANDARD_PAGE",
+    "BLOG_PAGE",
+    "NEWS_PAGE",
+    "CONTACT_PAGE"
+  ],
+  "areaTypeList": [
+    "BLOG_AREA",
+    "BUTTON_AREA",
+    "FEATURE_AREA",
+    "FOOTER_AREA",
+    "GENERIC_AREA",
+    "JUMBOTRON_AREA",
+    "LINKLIST_AREA",
+    "NEWS_AREA",
+    "FORM_AREA",
+    "HEADER_AREA",
+    "TEXT_AREA"
+  ],
+  "elementTypeList": [
+    "GENERIC_ELEMENT",
+    "LINKLIST_ELEMENT",
+    "BUTTON_ELEMENT",
+    "JUMBOTRON_ELEMENT",
+    "FEATURE_ELEMENT",
+    "IMAGE_ELEMENT",
+    "TEXT_ELEMENT",
+    "NEWS_ELEMENT",
+    "BLOG_ELEMENT",
+    "FORM_ELEMENT"
+  ],
   "pagesTypes": [
     {
       "route": {
@@ -13,6 +43,8 @@
         "subRoutes": []
       },
       "type": "HOME_PAGE",
+      "pageId": 0,
+      "order": 0,
       "options": {
         "template": "templates/home_page.hbs"
       },
@@ -33,6 +65,8 @@
         "subRoutes": []
       },
       "type": "LANDING_PAGE",
+      "pageId": 0,
+      "order": 0,
       "options": {
         "template": "templates/landing_page.hbs"
       },
@@ -53,6 +87,8 @@
         "subRoutes": []
       },
       "type": "STANDARD_PAGE",
+      "pageId": 0,
+      "order": 0,
       "options": {
         "template": "templates/standard_page.hbs"
       },
@@ -73,6 +109,8 @@
         "subRoutes": []
       },
       "type": "FEATURED_PAGE",
+      "pageId": 0,
+      "order": 0,
       "options": {
         "template": "templates/featured_page.hbs"
       },
@@ -93,6 +131,8 @@
         "subRoutes": []
       },
       "type": "BLOG_PAGE",
+      "pageId": 0,
+      "order": 0,
       "options": {
         "template": "templates/blog_page.hbs"
       },
@@ -113,6 +153,8 @@
         "subRoutes": []
       },
       "type": "NEWS_PAGE",
+      "pageId": 0,
+      "order": 0,
       "options": {
         "template": "templates/news_page.hbs"
       },
@@ -133,6 +175,8 @@
         "subRoutes": []
       },
       "type": "CONTACT_PAGE",
+      "pageId": 0,
+      "order": 0,
       "options": {
         "template": "templates/landing_page.hbs"
       },
@@ -148,6 +192,8 @@
     {
       "areaName": "blog-area",
       "type": "BLOG_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -171,6 +217,8 @@
     {
       "areaName": "button-area",
       "type": "BUTTON_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -190,6 +238,8 @@
     {
       "areaName": "feature-area",
       "type": "FEATURE_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -209,6 +259,8 @@
     {
       "areaName": "footer-area",
       "type": "FOOTER_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -230,6 +282,8 @@
     {
       "areaName": "generic-area",
       "type": "GENERIC_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -252,6 +306,8 @@
     {
       "areaName": "jumbotron-area",
       "type": "JUMBOTRON_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -274,6 +330,8 @@
     {
       "areaName": "linklist-area",
       "type": "LINKLIST_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -296,6 +354,8 @@
     {
       "areaName": "news-area",
       "type": "NEWS_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -319,6 +379,8 @@
     {
       "areaName": "form-area",
       "type": "FORM_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -343,6 +405,8 @@
     {
       "areaName": "header-area",
       "type": "HEADER_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -364,6 +428,8 @@
     {
       "areaName": "text-area",
       "type": "TEXT_AREA",
+      "areaId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -387,6 +453,8 @@
     {
       "elementName": "generic-element",
       "type": "GENERIC_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -405,6 +473,8 @@
     {
       "elementName": "linklist-element",
       "type": "LINKLIST_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -429,6 +499,8 @@
     {
       "elementName": "button-element",
       "type": "BUTTON_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -448,6 +520,8 @@
     {
       "elementName": "jumbotron-element",
       "type": "JUMBOTRON_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -471,6 +545,8 @@
     {
       "elementName": "feature-element",
       "type": "FEATURE_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -493,6 +569,8 @@
     {
       "elementName": "image-element",
       "type": "IMAGE_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -511,6 +589,8 @@
     {
       "elementName": "text-element",
       "type": "TEXT_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -529,6 +609,8 @@
     {
       "elementName": "news-element",
       "type": "NEWS_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -549,6 +631,8 @@
     {
       "elementName": "blog-element",
       "type": "BLOG_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
@@ -569,6 +653,8 @@
     {
       "elementName": "form-element",
       "type": "FORM_ELEMENT",
+      "elementId": 0,
+      "order": 0,
       "options": {
         "selectedDisplayClass": "full",
         "displayClassOptions": [
