@@ -14,6 +14,8 @@ async function bootstrap() {
     AppModule,
   );
 
+  app.enableCors();
+
   const loadComponents = (pathName: string) => {
     const partialsDir = __dirname + `/../views/${pathName}`;
     const filenames = fs.readdirSync(partialsDir);
