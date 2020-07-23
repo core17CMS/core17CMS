@@ -26,7 +26,7 @@ export class FileService {
   }
 
   static queryDb(dbFileString: string): any {
-    return new Promise<IDatabaseQueryResolution>((resolve, reject) => {
+    return new Promise<any>((resolve, reject) => {
       try {
         const file: any = fs.readFileSync(`database/${dbFileString}.json`);
         resolve(

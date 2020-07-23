@@ -11,6 +11,8 @@ import { ISite, ISitePageObject, IRouteResponse, IRouteObject, IDatabaseQueryRes
 import { Log, CALL_PAGE_FACTORY } from '../_utilities/base.constants';
 
 import { PageFactory } from './../_factories/page.factory'
+import { BasePageClass } from '../_classes/base-page.class';
+import { IBasePageInterface } from '../_interfaces/basePageClass/IBasePage.interface';
 
 
 @Controller()
@@ -24,6 +26,7 @@ export class MainController {
    * @Param construct page.
    */
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor() {}
 
 
@@ -31,13 +34,19 @@ export class MainController {
    * @Param Query DB for site object.
    */
 
-  private initialiseDatabaseState(): void {
+  private async initialiseDatabaseState(): Promise<Array<BasePageClass>> {
 
-    FileService.queryDb('site').then((response: IDatabaseQueryResolution) => {
-      this.globalDataObject = response.payload;
+    const listOfBasePages: BasePageClass[] = [];
+
+    await FileService.queryDb('site_new').then((response) => {
+        response.payload.pages.forEach((page: IBasePageInterface) => {
+          listOfBasePages.push(BasePageClass.makeSingle(page));
+        });
     }).catch((error: IDatabaseQueryResolution) => {
-      Log(error.payload);
+      Log(error.payload)
     });
+
+    return listOfBasePages;
 
   }
 
@@ -57,27 +66,37 @@ export class MainController {
   @Get(':id')
   public async customRouteProvider(@Param() param: IRouteResponse, @Res() responseToSend: any) {
 
-    await this.initialiseDatabaseState();
+    const listOfBasePages: BasePageClass[] = await this.initialiseDatabaseState();
 
-    return this.routeConstructor(param, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
+    const pageToRender: BasePageClass = await listOfBasePages.find(page => page.pageRoute === param.id);
 
-      const template = factoryResponse.options.template;
-      const areas = factoryResponse.contentItems[0].areas;
+    console.log(pageToRender);
+    // console.log('pageToRender.pageOptions.pageTemplate', pageToRender.pageOptions.pageTemplate)
+    // console.log('listOfBasePages = ', listOfBasePages)
 
-      // add a title object?
-      
-      responseToSend.render(template, {
-        pageData: {
-          routes: this.getPageProps('GET_ROUTES'),
-        },
-        viewData: areas,
-      });
-    }).catch((err: string) => {
-      responseToSend.render('error.hbs', {
-        pageData: [],
-        viewData: err,
-      });
-    });
+    responseToSend.render(pageToRender.pageOptions.page_template)
+
+    // return this.routeConstructor(param, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
+    //
+    //   const template = factoryResponse.options.template;
+    //   const areas = factoryResponse.contentItems[0].areas;
+    //
+    //   // add a title object?
+    //
+    //   responseToSend.render(template, {
+    //     pageData: {
+    //       routes: this.getPageProps('GET_ROUTES'),
+    //     },
+    //     viewData: areas,
+    //   });
+    // }).catch((err: string) => {
+    //   responseToSend.render('error.hbs', {
+    //     pageData: [],
+    //     viewData: err,
+    //   });
+    // });
+
+    // responseToSend.send('yes')
 
   }
 
