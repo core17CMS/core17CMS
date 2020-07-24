@@ -35,6 +35,9 @@ async function bootstrap() {
   hbs.registerHelper('var',function(name, value){
     this[name] = value;
   });
+  hbs.registerHelper('isDefined', function (value) {
+    return value !== undefined;
+  });
 
   loadComponents('partials/areas');
   loadComponents('partials/elements');

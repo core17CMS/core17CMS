@@ -13,6 +13,11 @@ import { Log, CALL_PAGE_FACTORY } from '../_utilities/base.constants';
 import { PageFactory } from './../_factories/page.factory'
 import { BasePageClass } from '../_classes/base-page.class';
 import { IBasePageInterface } from '../_interfaces/basePageClass/IBasePage.interface';
+import {
+  IAppMetaDataInterface,
+  IPageMetaData,
+  IRouteStructure,
+} from '../_interfaces/appMetaData/IAppMetaData.interface';
 
 
 @Controller()
@@ -20,14 +25,17 @@ export class MainController {
 
 
   private globalDataObject: ISite;
+  private listOfBasePages: BasePageClass[];
+  private appMetaData: IAppMetaDataInterface;
 
 
   /*
    * @Param construct page.
    */
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor() {}
+  constructor() {
+    this.initialiseDatabaseState().then((basePages: BasePageClass[]) => this.listOfBasePages = basePages);
+  }
 
 
   /*
@@ -42,6 +50,7 @@ export class MainController {
         response.payload.pages.forEach((page: IBasePageInterface) => {
           listOfBasePages.push(BasePageClass.makeSingle(page));
         });
+        this.appMetaData = response.payload.app_meta_data;
     }).catch((error: IDatabaseQueryResolution) => {
       Log(error.payload)
     });
@@ -66,40 +75,35 @@ export class MainController {
   @Get(':id')
   public async customRouteProvider(@Param() param: IRouteResponse, @Res() responseToSend: any) {
 
-    const listOfBasePages: BasePageClass[] = await this.initialiseDatabaseState();
+    const pageToRender: BasePageClass = await this.listOfBasePages.find(page => page.pageRoute === param.id);
 
-    const pageToRender: BasePageClass = await listOfBasePages.find(page => page.pageRoute === param.id);
-
-    console.log(pageToRender);
-    // console.log('pageToRender.pageOptions.pageTemplate', pageToRender.pageOptions.pageTemplate)
-    // console.log('listOfBasePages = ', listOfBasePages)
-
-    responseToSend.render(pageToRender.pageOptions.page_template)
-
-    // return this.routeConstructor(param, this.globalDataObject).then((factoryResponse: ISitePageObject) => {
-    //
-    //   const template = factoryResponse.options.template;
-    //   const areas = factoryResponse.contentItems[0].areas;
-    //
-    //   // add a title object?
-    //
-    //   responseToSend.render(template, {
-    //     pageData: {
-    //       routes: this.getPageProps('GET_ROUTES'),
-    //     },
-    //     viewData: areas,
-    //   });
-    // }).catch((err: string) => {
-    //   responseToSend.render('error.hbs', {
-    //     pageData: [],
-    //     viewData: err,
-    //   });
-    // });
-
-    // responseToSend.send('yes')
+    if(!!pageToRender) {
+      responseToSend.render(pageToRender.pageOptions.page_template, {
+        metaData: await this.constructPageMetaData(pageToRender),
+        viewData: 'yes'
+      })
+    }
 
   }
 
+  public constructPageMetaData(pageToRender: BasePageClass): IPageMetaData {
+
+    const routeList: IRouteStructure[] = [];
+
+    this.listOfBasePages.forEach((pageData) => {
+      routeList.push({
+        routeLink: pageData.pageRoute,
+        routeAlias: pageData.pageName
+      })
+    })
+
+    return {
+      pageTitle: pageToRender.pageName,
+      appTitle: this.appMetaData.app_name,
+      routes: routeList
+    }
+
+  }
 
   public getPageProps(command: string): string[] {
 

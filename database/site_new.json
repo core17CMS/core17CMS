@@ -1,4 +1,7 @@
 {
+    "app_meta_data": {
+        "app_name": "Core 17 CMS"
+    },
     "pages": [
         {
             "page_id": "home_page",

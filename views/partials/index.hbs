@@ -6,7 +6,7 @@
     <head>
         {{!-- Header section. --}}
         <meta charset="utf-8">
-        <title>Core 17 Starter Site</title>
+        <title>{{metaData.appTitle}} {{#if (isDefined metaData.pageTitle)}} - {{metaData.pageTitle}}{{/if}}</title>
         <meta name="description" content="Core 17 Starter Site">
         <meta name="core17" content="core17 CMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
     <body>
 
         <header>
-            {{> header-area viewData=pageData}}
+            {{> header-area viewData=metaData}}
         </header>
 
         <main>
