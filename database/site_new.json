@@ -6,7 +6,7 @@
         {
             "page_id": "home_page",
             "page_type": "STANDARD_PAGE",
-            "page_name": "Home Page",
+            "page_name": "Home Page 1",
             "page_route": "home",
             "page_order": 0,
             "page_options": {
